@@ -9,6 +9,7 @@
 #import "MSUMainController.h"
 #import "MSUHeader.h"
 #import "MSUNavgitionView.h"
+#import "MSUCharactorView.h"
 
 @interface MSUMainController ()
 
@@ -19,13 +20,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    self.view.backgroundColor = [UIColor whiteColor];
+    self.view.backgroundColor = WHITECOLOR;
     
-    
-    [self createGameRoom];
+    [self createNavi];
+    [self createCharactorRoom];
 }
 
-
+//导航栏
 - (void)createNavi{
     MSUNavgitionView *nav = [[MSUNavgitionView alloc] initWithFrame:CGRectMake(0, 0, WIDTH, 64)];
     [self.view addSubview:nav];
@@ -35,22 +36,17 @@
 }
 
 - (void)btnClick:(UIButton *)sender{
-    
 
 }
 
 - (void)renBtnClick:(UIButton *)sender{
     
-    
 }
 
-- (void)createGameRoom{
-    
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+//人物形象
+- (void)createCharactorRoom{
+    MSUCharactorView *charac = [[MSUCharactorView alloc] initWithFrame:CGRectMake(0, 62, WIDTH, HEIGHT - 64 - 44)];
+    [self.view addSubview:charac];
 }
 
 
