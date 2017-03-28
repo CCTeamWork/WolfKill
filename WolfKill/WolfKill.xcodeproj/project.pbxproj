@@ -101,6 +101,7 @@
 		F02729A01E8A359900823F53 /* zhunbei_2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F027294C1E8A359900823F53 /* zhunbei_2x.png */; };
 		F02729A71E8A3B5800823F53 /* MSUMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = F02729A31E8A3B5800823F53 /* MSUMainController.m */; };
 		F02729AA1E8A3B8A00823F53 /* MSUNavgitionView.m in Sources */ = {isa = PBXBuildFile; fileRef = F02729A91E8A3B8A00823F53 /* MSUNavgitionView.m */; };
+		F02729AD1E8A438200823F53 /* MSUCharactorView.m in Sources */ = {isa = PBXBuildFile; fileRef = F02729AC1E8A438200823F53 /* MSUCharactorView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -227,6 +228,8 @@
 		F02729A31E8A3B5800823F53 /* MSUMainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSUMainController.m; sourceTree = "<group>"; };
 		F02729A81E8A3B8A00823F53 /* MSUNavgitionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSUNavgitionView.h; sourceTree = "<group>"; };
 		F02729A91E8A3B8A00823F53 /* MSUNavgitionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSUNavgitionView.m; sourceTree = "<group>"; };
+		F02729AB1E8A438200823F53 /* MSUCharactorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSUCharactorView.h; sourceTree = "<group>"; };
+		F02729AC1E8A438200823F53 /* MSUCharactorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSUCharactorView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -499,6 +502,8 @@
 			children = (
 				F02729A81E8A3B8A00823F53 /* MSUNavgitionView.h */,
 				F02729A91E8A3B8A00823F53 /* MSUNavgitionView.m */,
+				F02729AB1E8A438200823F53 /* MSUCharactorView.h */,
+				F02729AC1E8A438200823F53 /* MSUCharactorView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -775,6 +780,7 @@
 				F02729AA1E8A3B8A00823F53 /* MSUNavgitionView.m in Sources */,
 				F02728161E8A31E000823F53 /* AppDelegate.m in Sources */,
 				F02728131E8A31E000823F53 /* main.m in Sources */,
+				F02729AD1E8A438200823F53 /* MSUCharactorView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

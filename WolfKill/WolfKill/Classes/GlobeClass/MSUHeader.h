@@ -20,6 +20,9 @@
 #define HEIGHT [UIScreen mainScreen].bounds.size.height
 #define BOUNDS [UIScreen mainScreen].bounds
 
+//定义尺寸相关
+#define statusHeight 20
+#define characHeight HEIGHT/6
 
 //定义颜色
 #define WHITECOLOR [UIColor whiteColor]

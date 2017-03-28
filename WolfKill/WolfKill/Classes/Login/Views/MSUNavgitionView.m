@@ -15,27 +15,26 @@
 {
     if (self = [super initWithFrame:frame]) {
         
-        [UIView animateWithDuration:1 animations:^{
-            [self createView];
-        }];
+        [self createView];
+
     }
     return self;
 }
 
 - (void)createView{
     UIView *navView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, WIDTH, 64)];
-    navView.backgroundColor =  REDCOLOR;
+    navView.backgroundColor =  BZCOLOR;
     [self addSubview:navView];
     
     self.backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    _backBtn.frame = CGRectMake(10, 5, 30, 30);
+    _backBtn.frame = CGRectMake(10, statusHeight + 5, 30, 30);
     _backBtn.backgroundColor = [UIColor blueColor];
     [_backBtn setImage:nil forState:UIControlStateNormal];
     _backBtn.backgroundColor = YELLOWCOLOR;
     [navView addSubview:_backBtn];
     
     self.renBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    _renBtn.frame = CGRectMake(WIDTH-40, 5, 30, 40);
+    _renBtn.frame = CGRectMake(WIDTH-40, statusHeight + 5, 30, 35);
     _renBtn.backgroundColor = [UIColor blueColor];
     [_renBtn setImage:nil forState:UIControlStateNormal];
     _renBtn.backgroundColor = YELLOWCOLOR;
@@ -44,9 +43,11 @@
     UILabel *roomlab = [[UILabel alloc] init];
     roomlab.text = @"简单21122房";
     roomlab.textColor = WHITECOLOR;
+    roomlab.textAlignment = NSTextAlignmentCenter;
+    [roomlab setFont:[UIFont systemFontOfSize:16]];
     [navView addSubview:roomlab];
     [roomlab makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(navView.top).offset(5);
+        make.top.equalTo(navView.top).offset(statusHeight + 5);
         make.left.equalTo(navView.left).offset(WIDTH * 0.5-50);
         make.width.equalTo(100);
         make.height.equalTo(30);
@@ -55,9 +56,10 @@
     
     UIImageView *wolfIma = [[UIImageView alloc] init];
     wolfIma.image = nil;
+    wolfIma.backgroundColor = [UIColor blackColor];
     [navView addSubview:wolfIma];
     [wolfIma makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(navView.top).offset(5);
+        make.top.equalTo(navView.top).offset(statusHeight + 5);
         make.left.equalTo(roomlab.left).offset(-30);
         make.width.equalTo(30);
         make.height.equalTo(30);
@@ -65,9 +67,10 @@
     
     UIImageView *lockIma = [[UIImageView alloc] init];
     lockIma.image = nil;
+    lockIma.backgroundColor = [UIColor blackColor];
     [navView addSubview:lockIma];
     [lockIma makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(navView.top).offset(5);
+        make.top.equalTo(navView.top).offset(statusHeight + 5);
         make.left.equalTo(roomlab.right).offset(0);
         make.width.equalTo(30);
         make.height.equalTo(30);
