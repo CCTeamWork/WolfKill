@@ -38,9 +38,7 @@
             make.width.equalTo(50);
             make.height.equalTo(50);
         }];
-
     }
-
 }
 
 @end
