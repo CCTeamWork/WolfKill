@@ -18,5 +18,6 @@
 @property (nonatomic , strong) UIButton *wordBtn;
 @property (nonatomic , strong) UIButton *videoBtn;
 @property (nonatomic , strong) UIButton *giftBtn;
+@property (nonatomic , strong) UIButton *passBtn;
 
 @end

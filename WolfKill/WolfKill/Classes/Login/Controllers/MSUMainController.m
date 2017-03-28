@@ -62,6 +62,10 @@
 - (void)createCharactorRoom{
     MSUCharactorView *charac = [[MSUCharactorView alloc] initWithFrame:CGRectMake(0, 64, WIDTH, HEIGHT - 64)];
     [self.view addSubview:charac];
+    [charac.wordBtn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
+    [charac.videoBtn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
+    [charac.passBtn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
+
 }
 
 
