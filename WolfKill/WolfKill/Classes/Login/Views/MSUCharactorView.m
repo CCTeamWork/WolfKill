@@ -52,7 +52,6 @@
             make.height.equalTo(25);
         }];
 
-
     }
     
     for (int i = 0; i < 6; i++) {
@@ -101,6 +100,7 @@
             make.height.equalTo(25);
         }];
     }
+
     
     self.wordBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     _wordBtn.backgroundColor = [UIColor yellowColor];
@@ -114,6 +114,7 @@
 
     [_wordBtn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
     
+
 
 }
 

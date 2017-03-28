@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		17B8970DFA14C9B083ABE3C6 /* libPods-WolfKill.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A751F22BF325383D344B37B8 /* libPods-WolfKill.a */; };
+		D74D7F671E8A491600533A99 /* AlertBgView.m in Sources */ = {isa = PBXBuildFile; fileRef = D74D7F661E8A491600533A99 /* AlertBgView.m */; };
+		D74D7F691E8A492700533A99 /* AlertBgView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D74D7F681E8A492700533A99 /* AlertBgView.xib */; };
+		D74D7F6C1E8A509900533A99 /* MainCenterView.m in Sources */ = {isa = PBXBuildFile; fileRef = D74D7F6B1E8A509900533A99 /* MainCenterView.m */; };
+		D74D7F6E1E8A513100533A99 /* MainCenterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D74D7F6D1E8A513100533A99 /* MainCenterView.xib */; };
+		D74D7F731E8A532400533A99 /* yan.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D74D7F721E8A532400533A99 /* yan.ttf */; };
+		D74D7F761E8A56A500533A99 /* UIView+Convenience.m in Sources */ = {isa = PBXBuildFile; fileRef = D74D7F751E8A56A500533A99 /* UIView+Convenience.m */; };
 		F02728131E8A31E000823F53 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F02728121E8A31E000823F53 /* main.m */; };
 		F02728161E8A31E000823F53 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F02728151E8A31E000823F53 /* AppDelegate.m */; };
 		F027281C1E8A31E000823F53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F027281A1E8A31E000823F53 /* Main.storyboard */; };
@@ -124,6 +130,15 @@
 /* Begin PBXFileReference section */
 		A751F22BF325383D344B37B8 /* libPods-WolfKill.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WolfKill.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B10732A07A75E62BFAC0A0B4 /* Pods-WolfKill.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WolfKill.release.xcconfig"; path = "Pods/Target Support Files/Pods-WolfKill/Pods-WolfKill.release.xcconfig"; sourceTree = "<group>"; };
+		D74D7F651E8A491600533A99 /* AlertBgView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertBgView.h; sourceTree = "<group>"; };
+		D74D7F661E8A491600533A99 /* AlertBgView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertBgView.m; sourceTree = "<group>"; };
+		D74D7F681E8A492700533A99 /* AlertBgView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlertBgView.xib; sourceTree = "<group>"; };
+		D74D7F6A1E8A509900533A99 /* MainCenterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainCenterView.h; sourceTree = "<group>"; };
+		D74D7F6B1E8A509900533A99 /* MainCenterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainCenterView.m; sourceTree = "<group>"; };
+		D74D7F6D1E8A513100533A99 /* MainCenterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainCenterView.xib; sourceTree = "<group>"; };
+		D74D7F721E8A532400533A99 /* yan.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = yan.ttf; sourceTree = "<group>"; };
+		D74D7F741E8A56A500533A99 /* UIView+Convenience.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Convenience.h"; sourceTree = "<group>"; };
+		D74D7F751E8A56A500533A99 /* UIView+Convenience.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Convenience.m"; sourceTree = "<group>"; };
 		ED9105A806159BA55BD1BA1A /* Pods-WolfKill.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WolfKill.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WolfKill/Pods-WolfKill.debug.xcconfig"; sourceTree = "<group>"; };
 		F027280E1E8A31E000823F53 /* WolfKill.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WolfKill.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F02728121E8A31E000823F53 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -275,6 +290,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D74D7F711E8A532400533A99 /* Resurces */ = {
+			isa = PBXGroup;
+			children = (
+				D74D7F721E8A532400533A99 /* yan.ttf */,
+			);
+			path = Resurces;
+			sourceTree = "<group>";
+		};
 		F02728051E8A31E000823F53 = {
 			isa = PBXGroup;
 			children = (
@@ -360,6 +383,8 @@
 			isa = PBXGroup;
 			children = (
 				F027284E1E8A344400823F53 /* MSUHeader.h */,
+				D74D7F741E8A56A500533A99 /* UIView+Convenience.h */,
+				D74D7F751E8A56A500533A99 /* UIView+Convenience.m */,
 			);
 			path = GlobeClass;
 			sourceTree = "<group>";
@@ -367,9 +392,9 @@
 		F02728471E8A326100823F53 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				D74D7F711E8A532400533A99 /* Resurces */,
 				F02729A11E8A3B5800823F53 /* Controllers */,
 				F02729A41E8A3B5800823F53 /* Models */,
-				F02729A51E8A3B5800823F53 /* Resurces */,
 				F02729A61E8A3B5800823F53 /* Views */,
 			);
 			path = Login;
@@ -490,13 +515,6 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		F02729A51E8A3B5800823F53 /* Resurces */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Resurces;
-			sourceTree = "<group>";
-		};
 		F02729A61E8A3B5800823F53 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -504,6 +522,12 @@
 				F02729A91E8A3B8A00823F53 /* MSUNavgitionView.m */,
 				F02729AB1E8A438200823F53 /* MSUCharactorView.h */,
 				F02729AC1E8A438200823F53 /* MSUCharactorView.m */,
+				D74D7F651E8A491600533A99 /* AlertBgView.h */,
+				D74D7F661E8A491600533A99 /* AlertBgView.m */,
+				D74D7F681E8A492700533A99 /* AlertBgView.xib */,
+				D74D7F6A1E8A509900533A99 /* MainCenterView.h */,
+				D74D7F6B1E8A509900533A99 /* MainCenterView.m */,
+				D74D7F6D1E8A513100533A99 /* MainCenterView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -638,6 +662,7 @@
 				F027296D1E8A359900823F53 /* jinghui.png in Resources */,
 				F02729821E8A359900823F53 /* quexiao_2x.png in Resources */,
 				F027281E1E8A31E000823F53 /* Assets.xcassets in Resources */,
+				D74D7F731E8A532400533A99 /* yan.ttf in Resources */,
 				F02729531E8A359900823F53 /* chakanxiangqing_01.png in Resources */,
 				F02729761E8A359900823F53 /* lose.png in Resources */,
 				F02729771E8A359900823F53 /* mima2_2x.png in Resources */,
@@ -664,6 +689,7 @@
 				F027294D1E8A359900823F53 /* a4_2x.png in Resources */,
 				F027281C1E8A31E000823F53 /* Main.storyboard in Resources */,
 				F027297D1E8A359900823F53 /* qipao_2x_left.png in Resources */,
+				D74D7F6E1E8A513100533A99 /* MainCenterView.xib in Resources */,
 				F027297F1E8A359900823F53 /* queding.png in Resources */,
 				F02729741E8A359900823F53 /* liwudiban.png in Resources */,
 				F027297A1E8A359900823F53 /* moxing_3_2x.png in Resources */,
@@ -701,6 +727,7 @@
 				F027299B1E8A359900823F53 /* yaoqing_04.png in Resources */,
 				F027295F1E8A359900823F53 /* guanbi_2x.png in Resources */,
 				F02729951E8A359900823F53 /* xianhua_2x.png in Resources */,
+				D74D7F691E8A492700533A99 /* AlertBgView.xib in Resources */,
 				F02729521E8A359900823F53 /* beijing_2x.png in Resources */,
 				F02729641E8A359900823F53 /* jiahaoyou.png in Resources */,
 				F027295C1E8A359900823F53 /* feiji_2x.png in Resources */,
@@ -776,10 +803,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D74D7F761E8A56A500533A99 /* UIView+Convenience.m in Sources */,
 				F02729A71E8A3B5800823F53 /* MSUMainController.m in Sources */,
 				F02729AA1E8A3B8A00823F53 /* MSUNavgitionView.m in Sources */,
 				F02728161E8A31E000823F53 /* AppDelegate.m in Sources */,
 				F02728131E8A31E000823F53 /* main.m in Sources */,
+				D74D7F671E8A491600533A99 /* AlertBgView.m in Sources */,
+				D74D7F6C1E8A509900533A99 /* MainCenterView.m in Sources */,
 				F02729AD1E8A438200823F53 /* MSUCharactorView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
