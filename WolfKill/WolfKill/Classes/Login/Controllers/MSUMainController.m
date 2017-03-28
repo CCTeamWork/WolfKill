@@ -26,7 +26,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    self.view.backgroundColor = WHITECOLOR;
+    self.view.backgroundColor = BGCOLOR;
     
     [self createNavi];
     [self createCharactorRoom];
@@ -60,7 +60,7 @@
 
 //人物形象
 - (void)createCharactorRoom{
-    MSUCharactorView *charac = [[MSUCharactorView alloc] initWithFrame:CGRectMake(0, 62, WIDTH, HEIGHT - 64 - 44)];
+    MSUCharactorView *charac = [[MSUCharactorView alloc] initWithFrame:CGRectMake(0, 64, WIDTH, HEIGHT - 64)];
     [self.view addSubview:charac];
 }
 

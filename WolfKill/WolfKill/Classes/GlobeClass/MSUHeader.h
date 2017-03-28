@@ -22,7 +22,9 @@
 
 //定义尺寸相关
 #define statusHeight 20
-#define characHeight HEIGHT/6
+#define characHeight (HEIGHT - 64 - 44 - 20 - 6 * 10)/6
+#define characWidth 40
+#define bottomSpace ((WIDTH - 40) - (5 * characWidth))/4
 
 //定义颜色
 #define WHITECOLOR [UIColor whiteColor]
@@ -32,7 +34,7 @@
 #define TEXTCOLOR [UIColor colorWithRed:225/255.0 green:225/255.0 blue:225/255.0 alpha:1.0]
 #define BTCOLOR [UIColor colorWithRed:240/255.0 green:240/255.0 blue:240/255.0 alpha:1.0]
 #define TIMECOLOR [UIColor colorWithRed:80/255.0 green:80/255.0 blue:80/255.0 alpha:1.0]
-#define BZCOLOR [UIColor colorWithRed:175/255.0 green:175/255.0 blue:175/255.0 alpha:1.0]
+#define BGCOLOR [UIColor colorWithRed:12/255.0 green:77/255.0 blue:146/255.0 alpha:1.0]
 #define SLIVERYCOLOR [UIColor colorWithRed:240/255.0 green:240/255.0 blue:241/255.0 alpha:1.0]
 #define BLUECOLOR [UIColor colorWithRed:97/255.0 green:177/255.0 blue:238/255.0 alpha:1.0]
 #define YELLOWCOLOR [UIColor colorWithRed:221/255.0 green:215/255.0 blue:185/255.0 alpha:1.0]

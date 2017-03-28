@@ -38,7 +38,7 @@
  *  让当前view抖动
  *
  *  @param count     抖动次数/范围
- *  @param snapshoot 每次抖动的时间
+ *  @param interval 每次抖动的时间
  */
 - (void)shakeWithCount:(int)count interval:(NSTimeInterval)interval;
 
