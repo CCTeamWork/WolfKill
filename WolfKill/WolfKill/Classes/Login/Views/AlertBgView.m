@@ -18,6 +18,10 @@
     self =[super initWithFrame:frame];
     if (self) {
         self =[[[NSBundle mainBundle]loadNibNamed:NSStringFromClass([self class]) owner:nil options:nil] firstObject];
+        
+        self.topView.backgroundColor =[UIColor clearColor];
+        self.btmView.backgroundColor =[UIColor clearColor];
+
         self.frame =CGRectMake(0, 0, CGRectGetWidth(frame), CGRectGetHeight(frame));
         [self addGestureRecognizer:[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(didBgView:)]];
     }

@@ -10,6 +10,7 @@
 
 @interface MainCenterView : UIView
 
-@property (weak, nonatomic) IBOutlet UILabel *topLabel;
+//顶部黑框里的文字
+@property(nonatomic, copy)NSString *topText;
 
 @end

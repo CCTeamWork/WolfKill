@@ -12,25 +12,25 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MainCenterView">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <rect key="frame" x="0.0" y="0.0" width="227" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view alpha="0.90000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UVf-uZ-gZg">
-                    <rect key="frame" x="10" y="20" width="300" height="59.5"/>
+                    <rect key="frame" x="10" y="20" width="207" height="73"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="天黑了" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TGM-jO-VRZ">
-                            <rect key="frame" x="20" y="20" width="260" height="19.5"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="天黑了,天黑了,天黑了,天黑了,天黑了" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TGM-jO-VRZ">
+                            <rect key="frame" x="15" y="15" width="177" height="43"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
                     <color key="backgroundColor" red="0.10731717199087143" green="0.24147471785545349" blue="0.33714562654495239" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
-                        <constraint firstAttribute="bottom" secondItem="TGM-jO-VRZ" secondAttribute="bottom" constant="20" id="1aJ-fQ-arD"/>
-                        <constraint firstAttribute="trailing" secondItem="TGM-jO-VRZ" secondAttribute="trailing" constant="20" id="Muo-pV-Qs5"/>
-                        <constraint firstItem="TGM-jO-VRZ" firstAttribute="top" secondItem="UVf-uZ-gZg" secondAttribute="top" constant="20" id="aIT-SV-vqx"/>
-                        <constraint firstItem="TGM-jO-VRZ" firstAttribute="leading" secondItem="UVf-uZ-gZg" secondAttribute="leading" constant="20" id="pxY-Qy-YZC"/>
+                        <constraint firstAttribute="bottom" secondItem="TGM-jO-VRZ" secondAttribute="bottom" constant="15" id="1aJ-fQ-arD"/>
+                        <constraint firstAttribute="trailing" secondItem="TGM-jO-VRZ" secondAttribute="trailing" constant="15" id="Muo-pV-Qs5"/>
+                        <constraint firstItem="TGM-jO-VRZ" firstAttribute="top" secondItem="UVf-uZ-gZg" secondAttribute="top" constant="15" id="aIT-SV-vqx"/>
+                        <constraint firstItem="TGM-jO-VRZ" firstAttribute="leading" secondItem="UVf-uZ-gZg" secondAttribute="leading" constant="15" id="pxY-Qy-YZC"/>
                     </constraints>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -49,6 +49,7 @@
             <connections>
                 <outlet property="topLabel" destination="TGM-jO-VRZ" id="QMw-tQ-tob"/>
             </connections>
+            <point key="canvasLocation" x="80.5" y="54"/>
         </view>
     </objects>
 </document>
