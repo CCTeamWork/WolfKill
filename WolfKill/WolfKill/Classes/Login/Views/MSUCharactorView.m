@@ -23,29 +23,43 @@
 
 
 - (void)createView{
-    UIView *bgView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, WIDTH, HEIGHT - 64 - 44)];
+    UIView *bgView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, WIDTH, HEIGHT - 64)];
     [self addSubview:bgView];
-    bgView.backgroundColor = BLUECOLOR;
+    
+    UIImageView *bgImaView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, WIDTH, HEIGHT - 64)];
+    bgImaView.image = [UIImage imageNamed:@"bg"];
+    [bgView addSubview:bgImaView];
     
     for (int i = 0; i < 6; i++) {
         self.leftCharactBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        _leftCharactBtn.backgroundColor = CAOGREENCOLOR;
+        [_leftCharactBtn setImage:[UIImage imageNamed:@"moxing_2"] forState:UIControlStateNormal];
         _leftCharactBtn.tag = i + 10;
-        [self addSubview:_leftCharactBtn];
+        [bgView addSubview:_leftCharactBtn];
         [_leftCharactBtn makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(bgView.top).offset(20 + (characHeight + 10) * i);
             make.left.equalTo(bgView.left).offset(20);
             make.width.equalTo(characWidth);
             make.height.equalTo(characHeight);
         }];
+        
+        self.identiLeftIma = [[UIImageView alloc] init];
+        _identiLeftIma.image = [UIImage imageNamed:@"huangsexingxing"];
+        [bgView addSubview:_identiLeftIma];
+        [_identiLeftIma makeConstraints:^(MASConstraintMaker *make) {
+            make.bottom.equalTo(_leftCharactBtn.bottom).offset(0);
+            make.left.equalTo(_leftCharactBtn.right).offset(-15);
+            make.width.equalTo(25);
+            make.height.equalTo(25);
+        }];
+
 
     }
     
     for (int i = 0; i < 6; i++) {
         self.rightCharactBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        _rightCharactBtn.backgroundColor = CAOGREENCOLOR;
+        [_rightCharactBtn setImage:[UIImage imageNamed:@"moxing_1"] forState:UIControlStateNormal];
         _rightCharactBtn.tag = i + 20;
-        [self addSubview:_rightCharactBtn];
+        [bgView addSubview:_rightCharactBtn];
         [_rightCharactBtn makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(bgView.top).offset(20 + (characHeight + 10) * i);
             make.right.equalTo(bgView.right).offset(-20);
@@ -53,15 +67,25 @@
             make.height.equalTo(characHeight);
         }];
         
+        self.identiRightIma = [[UIImageView alloc] init];
+        _identiRightIma.image = [UIImage imageNamed:@"huangsexingxing"];
+        [bgView addSubview:_identiRightIma];
+        [_identiRightIma makeConstraints:^(MASConstraintMaker *make) {
+            make.bottom.equalTo(_rightCharactBtn.bottom).offset(0);
+            make.right.equalTo(_rightCharactBtn.left).offset(15);
+            make.width.equalTo(25);
+            make.height.equalTo(25);
+        }];
+        
     }
     
     for (int i = 0; i < 3; i++) {
         self.bottomCharactBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        _bottomCharactBtn.backgroundColor = CAOGREENCOLOR;
+        [_bottomCharactBtn setImage:[UIImage imageNamed:@"moxing_1"] forState:UIControlStateNormal];
         _bottomCharactBtn.tag = i + 30;
-        [self addSubview:_bottomCharactBtn];
+        [bgView addSubview:_bottomCharactBtn];
         [_bottomCharactBtn makeConstraints:^(MASConstraintMaker *make) {
-            make.bottom.equalTo(bgView.bottom).offset(-10);
+            make.bottom.equalTo(bgView.bottom).offset(-(10 + 44));
             make.left.equalTo(bgView.left).offset(20 + characWidth + bottomSpace + (bottomSpace + characWidth) * i);
             make.width.equalTo(characWidth);
             make.height.equalTo(characHeight);

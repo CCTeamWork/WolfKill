@@ -23,21 +23,17 @@
 
 - (void)createView{
     UIView *navView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, WIDTH, 64)];
-    navView.backgroundColor =  BZCOLOR;
+    navView.backgroundColor = BGCOLOR;
     [self addSubview:navView];
     
     self.backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     _backBtn.frame = CGRectMake(10, statusHeight + 5, 30, 30);
-    _backBtn.backgroundColor = [UIColor blueColor];
-    [_backBtn setImage:nil forState:UIControlStateNormal];
-    _backBtn.backgroundColor = YELLOWCOLOR;
+    [_backBtn setImage:[UIImage imageNamed:@"fanhui"] forState:UIControlStateNormal];
     [navView addSubview:_backBtn];
     
     self.renBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     _renBtn.frame = CGRectMake(WIDTH-40, statusHeight + 5, 30, 35);
-    _renBtn.backgroundColor = [UIColor blueColor];
-    [_renBtn setImage:nil forState:UIControlStateNormal];
-    _renBtn.backgroundColor = YELLOWCOLOR;
+    [_renBtn setImage:[UIImage imageNamed:@"renwu"] forState:UIControlStateNormal];
     [navView addSubview:_renBtn];
     
     UILabel *roomlab = [[UILabel alloc] init];
@@ -55,8 +51,7 @@
     
     
     UIImageView *wolfIma = [[UIImageView alloc] init];
-    wolfIma.image = nil;
-    wolfIma.backgroundColor = [UIColor blackColor];
+    wolfIma.image = [UIImage imageNamed:@"xiaolang"];
     [navView addSubview:wolfIma];
     [wolfIma makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(navView.top).offset(statusHeight + 5);
@@ -66,8 +61,7 @@
     }];
     
     UIImageView *lockIma = [[UIImageView alloc] init];
-    lockIma.image = nil;
-    lockIma.backgroundColor = [UIColor blackColor];
+    lockIma.image = [UIImage imageNamed:@"lock"];
     [navView addSubview:lockIma];
     [lockIma makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(navView.top).offset(statusHeight + 5);
