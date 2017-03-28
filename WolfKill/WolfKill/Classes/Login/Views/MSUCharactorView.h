@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface MSUCharactorView : UIView
+@property (nonatomic , strong) UIButton *leftCharactBtn;
+@property (nonatomic , strong) UIButton *bottomCharactBtn;
+@property (nonatomic , strong) UIButton *rightCharactBtn;
 
 @end

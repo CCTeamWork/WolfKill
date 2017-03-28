@@ -23,23 +23,52 @@
 
 
 - (void)createView{
-    UIView *bgView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, WIDTH, HEIGHT)];
+    UIView *bgView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, WIDTH, HEIGHT - 64 - 44)];
     [self addSubview:bgView];
     bgView.backgroundColor = BLUECOLOR;
     
-    for (int i = 0; i < 15; i++) {
-        UIImageView *charactIma = [[UIImageView alloc] init];
-        charactIma.image = nil;
-        [bgView addSubview:charactIma];
-        charactIma.backgroundColor = CAOGREENCOLOR;
-        [charactIma makeConstraints:^(MASConstraintMaker *make) {
+    for (int i = 0; i < 6; i++) {
+        self.leftCharactBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        _leftCharactBtn.backgroundColor = CAOGREENCOLOR;
+        _leftCharactBtn.tag = i + 10;
+        [self addSubview:_leftCharactBtn];
+        [_leftCharactBtn makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(bgView.top).offset(20 + (characHeight + 10) * i);
-            make.left.equalTo(bgView.left).offset(WIDTH * 0.5);
-            make.width.equalTo(50);
-            make.height.equalTo(50);
+            make.left.equalTo(bgView.left).offset(20);
+            make.width.equalTo(characWidth);
+            make.height.equalTo(characHeight);
         }];
 
     }
+    
+    for (int i = 0; i < 6; i++) {
+        self.rightCharactBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        _rightCharactBtn.backgroundColor = CAOGREENCOLOR;
+        _rightCharactBtn.tag = i + 20;
+        [self addSubview:_rightCharactBtn];
+        [_rightCharactBtn makeConstraints:^(MASConstraintMaker *make) {
+            make.top.equalTo(bgView.top).offset(20 + (characHeight + 10) * i);
+            make.right.equalTo(bgView.right).offset(-20);
+            make.width.equalTo(characWidth);
+            make.height.equalTo(characHeight);
+        }];
+        
+    }
+    
+    for (int i = 0; i < 3; i++) {
+        self.bottomCharactBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        _bottomCharactBtn.backgroundColor = CAOGREENCOLOR;
+        _bottomCharactBtn.tag = i + 30;
+        [self addSubview:_bottomCharactBtn];
+        [_bottomCharactBtn makeConstraints:^(MASConstraintMaker *make) {
+            make.bottom.equalTo(bgView.bottom).offset(-10);
+            make.left.equalTo(bgView.left).offset(20 + characWidth + bottomSpace + (bottomSpace + characWidth) * i);
+            make.width.equalTo(characWidth);
+            make.height.equalTo(characHeight);
+        }];
+        
+    }
+    
 
 }
 

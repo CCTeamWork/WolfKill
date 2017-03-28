@@ -22,7 +22,9 @@
 
 //定义尺寸相关
 #define statusHeight 20
-#define characHeight HEIGHT/6
+#define characHeight (HEIGHT - 64 - 44 - 20 - 6 * 10)/6
+#define characWidth 40
+#define bottomSpace ((WIDTH - 40) - (5 * characWidth))/4
 
 //定义颜色
 #define WHITECOLOR [UIColor whiteColor]
