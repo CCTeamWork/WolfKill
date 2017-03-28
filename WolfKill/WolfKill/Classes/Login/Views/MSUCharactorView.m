@@ -91,7 +91,28 @@
             make.height.equalTo(characHeight);
         }];
         
+        self.identiBottomIma = [[UIImageView alloc] init];
+        _identiBottomIma.image = [UIImage imageNamed:@"huangsexingxing"];
+        [bgView addSubview:_identiBottomIma];
+        [_identiBottomIma makeConstraints:^(MASConstraintMaker *make) {
+            make.bottom.equalTo(_bottomCharactBtn.bottom).offset(0);
+            make.left.equalTo(_bottomCharactBtn.right).offset(-15);
+            make.width.equalTo(25);
+            make.height.equalTo(25);
+        }];
     }
+    
+    self.wordBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    _wordBtn.backgroundColor = [UIColor yellowColor];
+    [self addSubview:_wordBtn];
+    [_wordBtn makeConstraints:^(MASConstraintMaker *make) {
+        make.bottom.equalTo(bgView.bottom).offset(10);
+        make.left.equalTo(bgView.left).offset(10);
+        make.width.equalTo(50);
+        make.height.equalTo(50);
+    }];
+
+    [_wordBtn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
     
 
 }

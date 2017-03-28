@@ -15,5 +15,8 @@
 @property (nonatomic , strong) UIImageView *identiLeftIma;
 @property (nonatomic , strong) UIImageView *identiRightIma;
 @property (nonatomic , strong) UIImageView *identiBottomIma;
+@property (nonatomic , strong) UIButton *wordBtn;
+@property (nonatomic , strong) UIButton *videoBtn;
+@property (nonatomic , strong) UIButton *giftBtn;
 
 @end
