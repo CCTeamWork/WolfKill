@@ -25,6 +25,7 @@
 #define characHeight (HEIGHT - 64 - 44 - 20 - 6 * 10)/6
 #define characWidth 40
 #define bottomSpace ((WIDTH - 40) - (5 * characWidth))/4
+#define leftSpace 20
 
 //定义颜色
 #define WHITECOLOR [UIColor whiteColor]

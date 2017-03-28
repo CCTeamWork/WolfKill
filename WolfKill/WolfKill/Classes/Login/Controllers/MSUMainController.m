@@ -52,7 +52,7 @@
     [nav.renBtn addTarget:self action:@selector(renBtnClick:) forControlEvents:UIControlEventTouchUpInside];
 }
 
-- (void)btnClick:(UIButton *)sender{
+- (void)btnClick:(UIButton *)sender {
     AlertBgView *alert =[[AlertBgView alloc]initWithFrame:CGRectMake(0, 0, WIDTH, HEIGHT)];
     alert.clickRemove =YES;
     alert.bgColor =[UIColor colorWithWhite:0 alpha:0.5];
@@ -70,7 +70,9 @@
 - (void)createCharactorRoom {
     self.characView = [[MSUCharactorView alloc] initWithFrame:CGRectMake(0, 64, WIDTH, HEIGHT - 64)];
     [self.view addSubview:_characView];
-    
+    [_characView.wordBtn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
+    [_characView.videoBtn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
+    [_characView.passBtn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
 }
 
 
