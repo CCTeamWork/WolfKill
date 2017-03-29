@@ -42,9 +42,9 @@
     [self.view addSubview:_centerView];
     [_centerView makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.view.top).offset(64+15);
-        make.left.equalTo(_characView.charactBtn.right).offset(10);
-        make.right.equalTo(_characView.charactBtn.left).offset(-10);
-        make.bottom.equalTo(_characView.charactBtn.top).offset(10);
+        make.left.equalTo(self.view.left).offset(100);
+        make.right.equalTo(self.view.right).offset(-100);
+        make.bottom.equalTo(self.view.bottom).offset(100);
     }];
 }
 
@@ -88,7 +88,7 @@
 - (void)keywordsButtonClick:(UIButton*)button {
     AlertBgView *alert =[[AlertBgView alloc]initWithFrame:CGRectMake(0, 0, WIDTH, HEIGHT)];
     alert.clickRemove =YES;
-    alert.bgColor =[UIColor colorWithWhite:0 alpha:0.3];
+    alert.bgColor =[UIColor colorWithWhite:0 alpha:0.8];
     [alert showView];
     
     alert.centerView_height.constant =0;
