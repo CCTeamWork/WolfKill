@@ -54,6 +54,7 @@
         [_btnBgView addSubview:button];
         [self.buttonArray addObject:button];
         UIImageView *imageView =[[UIImageView alloc]initWithImage:[UIImage imageNamed:@"siwang_bad"]];
+        imageView.tag =201703;
         imageView.center =CGPointMake(width-5, width-5);
         [button addSubview:imageView];
     }
@@ -77,6 +78,7 @@
         [_btnBgView addSubview:button];
         [self.buttonArray addObject:button];
         UIImageView *imageView =[[UIImageView alloc]initWithImage:[UIImage imageNamed:@"siwang_bad"]];
+        imageView.tag =201703;
         imageView.center =CGPointMake(width-5, width-5);
         [button addSubview:imageView];
     }

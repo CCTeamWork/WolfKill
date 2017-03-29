@@ -35,6 +35,7 @@
     _renBtn.frame = CGRectMake(WIDTH-40, statusHeight + 5, 30, 35);
     [_renBtn setImage:[UIImage imageNamed:@"renwu"] forState:UIControlStateNormal];
     [navView addSubview:_renBtn];
+    [_renBtn addTarget:self action:@selector(astBtnClick:) forControlEvents:UIControlEventTouchUpInside];
     
     UILabel *roomlab = [[UILabel alloc] init];
     roomlab.text = @"简单21122房";
@@ -72,5 +73,6 @@
 
     
 }
+
 
 @end

@@ -112,6 +112,7 @@
 		F02729A71E8A3B5800823F53 /* MSUMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = F02729A31E8A3B5800823F53 /* MSUMainController.m */; };
 		F02729AA1E8A3B8A00823F53 /* MSUNavgitionView.m in Sources */ = {isa = PBXBuildFile; fileRef = F02729A91E8A3B8A00823F53 /* MSUNavgitionView.m */; };
 		F02729AD1E8A438200823F53 /* MSUCharactorView.m in Sources */ = {isa = PBXBuildFile; fileRef = F02729AC1E8A438200823F53 /* MSUCharactorView.m */; };
+		F02729B01E8A68BA00823F53 /* MSUAlertDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = F02729AF1E8A68BA00823F53 /* MSUAlertDetailView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -255,6 +256,8 @@
 		F02729A91E8A3B8A00823F53 /* MSUNavgitionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSUNavgitionView.m; sourceTree = "<group>"; };
 		F02729AB1E8A438200823F53 /* MSUCharactorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSUCharactorView.h; sourceTree = "<group>"; };
 		F02729AC1E8A438200823F53 /* MSUCharactorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSUCharactorView.m; sourceTree = "<group>"; };
+		F02729AE1E8A68BA00823F53 /* MSUAlertDetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSUAlertDetailView.h; sourceTree = "<group>"; };
+		F02729AF1E8A68BA00823F53 /* MSUAlertDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSUAlertDetailView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -545,6 +548,8 @@
 				D74D7F651E8A491600533A99 /* AlertBgView.h */,
 				D74D7F661E8A491600533A99 /* AlertBgView.m */,
 				D74D7F681E8A492700533A99 /* AlertBgView.xib */,
+				F02729AE1E8A68BA00823F53 /* MSUAlertDetailView.h */,
+				F02729AF1E8A68BA00823F53 /* MSUAlertDetailView.m */,
 				D74D7F6A1E8A509900533A99 /* MainCenterView.h */,
 				D74D7F6B1E8A509900533A99 /* MainCenterView.m */,
 				D74D7F6D1E8A513100533A99 /* MainCenterView.xib */,
@@ -835,8 +840,11 @@
 				F02728161E8A31E000823F53 /* AppDelegate.m in Sources */,
 				F02728131E8A31E000823F53 /* main.m in Sources */,
 				D74D7F671E8A491600533A99 /* AlertBgView.m in Sources */,
+
 				D74D7F7B1E8A6F1B00533A99 /* MessageCell.m in Sources */,
 				D74D7F7F1E8A892500533A99 /* CampView.m in Sources */,
+
+				F02729B01E8A68BA00823F53 /* MSUAlertDetailView.m in Sources */,
 				D74D7F6C1E8A509900533A99 /* MainCenterView.m in Sources */,
 				F02729AD1E8A438200823F53 /* MSUCharactorView.m in Sources */,
 			);

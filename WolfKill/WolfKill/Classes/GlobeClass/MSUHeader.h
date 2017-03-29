@@ -26,6 +26,7 @@
 #define characWidth 40
 #define bottomSpace ((WIDTH - 40) - (5 * characWidth))/4
 #define leftSpace 20
+#define rightSpace 20
 
 //定义颜色
 #define WHITECOLOR [UIColor whiteColor]
@@ -33,7 +34,7 @@
 #define LINECOLOR [UIColor colorWithRed:215/255.0 green:216/255.0 blue:221/255.0 alpha:1.0]
 #define REDCOLOR [UIColor colorWithRed:236/255.0 green:58/255.0 blue:52/255.0 alpha:1.0]
 #define TEXTCOLOR [UIColor colorWithRed:225/255.0 green:225/255.0 blue:225/255.0 alpha:1.0]
-#define BTCOLOR [UIColor colorWithRed:240/255.0 green:240/255.0 blue:240/255.0 alpha:1.0]
+#define MIMABGCOLOR [UIColor colorWithRed:63/255.0 green:94/255.0 blue:153/255.0 alpha:1.0]
 #define TIMECOLOR [UIColor colorWithRed:80/255.0 green:80/255.0 blue:80/255.0 alpha:1.0]
 #define BGCOLOR [UIColor colorWithRed:12/255.0 green:77/255.0 blue:146/255.0 alpha:1.0]
 #define SLIVERYCOLOR [UIColor colorWithRed:240/255.0 green:240/255.0 blue:241/255.0 alpha:1.0]
