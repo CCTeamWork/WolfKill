@@ -14,6 +14,10 @@
 		D74D7F6E1E8A513100533A99 /* MainCenterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D74D7F6D1E8A513100533A99 /* MainCenterView.xib */; };
 		D74D7F731E8A532400533A99 /* yan.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D74D7F721E8A532400533A99 /* yan.ttf */; };
 		D74D7F761E8A56A500533A99 /* UIView+Convenience.m in Sources */ = {isa = PBXBuildFile; fileRef = D74D7F751E8A56A500533A99 /* UIView+Convenience.m */; };
+		D74D7F7B1E8A6F1B00533A99 /* MessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D74D7F791E8A6F1B00533A99 /* MessageCell.m */; };
+		D74D7F7C1E8A6F1B00533A99 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D74D7F7A1E8A6F1B00533A99 /* MessageCell.xib */; };
+		D74D7F7F1E8A892500533A99 /* CampView.m in Sources */ = {isa = PBXBuildFile; fileRef = D74D7F7E1E8A892500533A99 /* CampView.m */; };
+		D74D7F811E8A893500533A99 /* CampView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D74D7F801E8A893500533A99 /* CampView.xib */; };
 		F02728131E8A31E000823F53 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F02728121E8A31E000823F53 /* main.m */; };
 		F02728161E8A31E000823F53 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F02728151E8A31E000823F53 /* AppDelegate.m */; };
 		F027281C1E8A31E000823F53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F027281A1E8A31E000823F53 /* Main.storyboard */; };
@@ -140,6 +144,12 @@
 		D74D7F721E8A532400533A99 /* yan.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = yan.ttf; sourceTree = "<group>"; };
 		D74D7F741E8A56A500533A99 /* UIView+Convenience.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Convenience.h"; sourceTree = "<group>"; };
 		D74D7F751E8A56A500533A99 /* UIView+Convenience.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Convenience.m"; sourceTree = "<group>"; };
+		D74D7F781E8A6F1B00533A99 /* MessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageCell.h; sourceTree = "<group>"; };
+		D74D7F791E8A6F1B00533A99 /* MessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageCell.m; sourceTree = "<group>"; };
+		D74D7F7A1E8A6F1B00533A99 /* MessageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
+		D74D7F7D1E8A892500533A99 /* CampView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CampView.h; sourceTree = "<group>"; };
+		D74D7F7E1E8A892500533A99 /* CampView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CampView.m; sourceTree = "<group>"; };
+		D74D7F801E8A893500533A99 /* CampView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CampView.xib; sourceTree = "<group>"; };
 		ED9105A806159BA55BD1BA1A /* Pods-WolfKill.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WolfKill.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WolfKill/Pods-WolfKill.debug.xcconfig"; sourceTree = "<group>"; };
 		F027280E1E8A31E000823F53 /* WolfKill.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WolfKill.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F02728121E8A31E000823F53 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -299,6 +309,16 @@
 				D74D7F721E8A532400533A99 /* yan.ttf */,
 			);
 			path = Resurces;
+			sourceTree = "<group>";
+		};
+		D74D7F771E8A6EF900533A99 /* SubView */ = {
+			isa = PBXGroup;
+			children = (
+				D74D7F781E8A6F1B00533A99 /* MessageCell.h */,
+				D74D7F791E8A6F1B00533A99 /* MessageCell.m */,
+				D74D7F7A1E8A6F1B00533A99 /* MessageCell.xib */,
+			);
+			path = SubView;
 			sourceTree = "<group>";
 		};
 		F02728051E8A31E000823F53 = {
@@ -533,6 +553,10 @@
 				D74D7F6A1E8A509900533A99 /* MainCenterView.h */,
 				D74D7F6B1E8A509900533A99 /* MainCenterView.m */,
 				D74D7F6D1E8A513100533A99 /* MainCenterView.xib */,
+				D74D7F7D1E8A892500533A99 /* CampView.h */,
+				D74D7F7E1E8A892500533A99 /* CampView.m */,
+				D74D7F801E8A893500533A99 /* CampView.xib */,
+				D74D7F771E8A6EF900533A99 /* SubView */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -714,6 +738,7 @@
 				F02729711E8A359900823F53 /* langren.png in Resources */,
 				F027298B1E8A359900823F53 /* siwang.png in Resources */,
 				F02729911E8A359900823F53 /* tubiao.png in Resources */,
+				D74D7F7C1E8A6F1B00533A99 /* MessageCell.xib in Resources */,
 				F027295B1E8A359900823F53 /* fasongdi.PNG in Resources */,
 				F02729901E8A359900823F53 /* touxiang2.png in Resources */,
 				F027295E1E8A359900823F53 /* goutoumin.png in Resources */,
@@ -726,6 +751,7 @@
 				F027296B1E8A359900823F53 /* jiezhi_2x.png in Resources */,
 				F02729931E8A359900823F53 /* xialaanjian.png in Resources */,
 				F02729681E8A359900823F53 /* jian.png in Resources */,
+				D74D7F811E8A893500533A99 /* CampView.xib in Resources */,
 				F02729921E8A359900823F53 /* win.png in Resources */,
 				F02729991E8A359900823F53 /* xitongdengdai.png in Resources */,
 				F027298F1E8A359900823F53 /* toumingmoxing.png in Resources */,
@@ -814,6 +840,10 @@
 				F02728161E8A31E000823F53 /* AppDelegate.m in Sources */,
 				F02728131E8A31E000823F53 /* main.m in Sources */,
 				D74D7F671E8A491600533A99 /* AlertBgView.m in Sources */,
+
+				D74D7F7B1E8A6F1B00533A99 /* MessageCell.m in Sources */,
+				D74D7F7F1E8A892500533A99 /* CampView.m in Sources */,
+
 				F02729B01E8A68BA00823F53 /* MSUAlertDetailView.m in Sources */,
 				D74D7F6C1E8A509900533A99 /* MainCenterView.m in Sources */,
 				F02729AD1E8A438200823F53 /* MSUCharactorView.m in Sources */,

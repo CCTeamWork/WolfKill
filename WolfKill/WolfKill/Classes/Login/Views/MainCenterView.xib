@@ -16,11 +16,11 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view alpha="0.90000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UVf-uZ-gZg">
-                    <rect key="frame" x="10" y="20" width="207" height="73"/>
+                    <rect key="frame" x="10" y="20" width="207" height="71"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="天黑了,天黑了,天黑了,天黑了,天黑了" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TGM-jO-VRZ">
-                            <rect key="frame" x="15" y="15" width="177" height="43"/>
-                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                            <rect key="frame" x="15" y="15" width="177" height="41"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <nil key="highlightedColor"/>
                         </label>
@@ -38,18 +38,50 @@
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                 </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="是否使用毒药" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Jl-IW-fSJ" customClass="MyLabel">
+                    <rect key="frame" x="25" y="177" width="177" height="27"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JRI-Co-Tto">
+                    <rect key="frame" x="5" y="261" width="217" height="209"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="haC-cU-g8U">
+                    <rect key="frame" x="70" y="224" width="86" height="37"/>
+                    <state key="normal" backgroundImage="zhunbei_yellow"/>
+                    <state key="selected" backgroundImage="quxiaozhunbei"/>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="JRI-Co-Tto" firstAttribute="top" secondItem="haC-cU-g8U" secondAttribute="bottom" id="6fv-ue-Vxd"/>
+                <constraint firstItem="haC-cU-g8U" firstAttribute="centerX" secondItem="0Jl-IW-fSJ" secondAttribute="centerX" id="a42-ct-dHy"/>
+                <constraint firstItem="haC-cU-g8U" firstAttribute="top" secondItem="0Jl-IW-fSJ" secondAttribute="bottom" constant="20" id="b4j-uN-Lp3"/>
+                <constraint firstItem="0Jl-IW-fSJ" firstAttribute="leading" secondItem="TGM-jO-VRZ" secondAttribute="leading" id="c0t-oy-cGA"/>
+                <constraint firstItem="0Jl-IW-fSJ" firstAttribute="trailing" secondItem="TGM-jO-VRZ" secondAttribute="trailing" id="qMi-ro-NrQ"/>
                 <constraint firstItem="UVf-uZ-gZg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="vD9-vq-RuS"/>
                 <constraint firstItem="UVf-uZ-gZg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="vnk-9U-7e6"/>
+                <constraint firstItem="JRI-Co-Tto" firstAttribute="leading" secondItem="0Jl-IW-fSJ" secondAttribute="leading" constant="-20" id="vvk-ts-baD"/>
+                <constraint firstItem="JRI-Co-Tto" firstAttribute="trailing" secondItem="0Jl-IW-fSJ" secondAttribute="trailing" constant="20" id="wGO-Uh-OjL"/>
+                <constraint firstItem="0Jl-IW-fSJ" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-50" id="xdB-vW-ISa"/>
+                <constraint firstAttribute="bottom" secondItem="JRI-Co-Tto" secondAttribute="bottom" constant="10" id="ydu-YT-Afa"/>
                 <constraint firstAttribute="trailing" secondItem="UVf-uZ-gZg" secondAttribute="trailing" constant="10" id="ztF-ks-fNp"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
+                <outlet property="centerLabel" destination="0Jl-IW-fSJ" id="Lp7-a5-zse"/>
+                <outlet property="prepareButton" destination="haC-cU-g8U" id="Q6J-yO-03Q"/>
+                <outlet property="tableView" destination="JRI-Co-Tto" id="Dcv-c8-UFs"/>
                 <outlet property="topLabel" destination="TGM-jO-VRZ" id="QMw-tQ-tob"/>
             </connections>
             <point key="canvasLocation" x="80.5" y="54"/>
         </view>
     </objects>
+    <resources>
+        <image name="quxiaozhunbei" width="95" height="36"/>
+        <image name="zhunbei_yellow" width="86" height="37"/>
+    </resources>
 </document>

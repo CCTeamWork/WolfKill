@@ -14,6 +14,7 @@
 #import "AlertBgView.h"
 #import "MSUAlertDetailView.h"
 #import "MainCenterView.h"
+#import "CampView.h"
 
 @interface MSUMainController ()<UITextFieldDelegate>
 
@@ -67,6 +68,8 @@
     [_msuAlertView.sureOrCancelBtn addTarget:self action:@selector(sureOrCancelBtnClick:) forControlEvents:UIControlEventTouchUpInside];
     
     _centerView.topText =@"宋清正\n测试文字\n(0s)";
+    _centerView.centerText =@"是否使用毒药,是都使用毒药?";
+
 }
 
 - (void)gouBtnClick:(UIButton *)sender{
@@ -79,18 +82,58 @@
 
 - (void)renBtnClick:(UIButton *)sender{
     _centerView.topText =@"sqz宋清正sqz\n测试文字\n(15s)";
+    _centerView.centerText =@"不使用";
+}
+
+- (void)keywordsButtonClick:(UIButton*)button {
+    AlertBgView *alert =[[AlertBgView alloc]initWithFrame:CGRectMake(0, 0, WIDTH, HEIGHT)];
+    alert.clickRemove =YES;
+    alert.bgColor =[UIColor colorWithWhite:0 alpha:0.3];
+    [alert showView];
+    
+    alert.centerView_height.constant =0;
+    
+    //对阵信息上一部分
+    CampView *oneView =[[CampView alloc]initWithFrame:CGRectZero type:CampViewTypeWerewolf];
+    oneView.typeImageView.image =[UIImage imageNamed:@"lose"];
+    [alert.topView addSubview:oneView];
+    [oneView makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(alert.topView.bottom).offset(-150);
+        make.left.equalTo(alert.topView.left).offset(10);
+        make.right.equalTo(alert.topView.right).offset(-10);
+        make.height.equalTo(150);
+    }];
+    // 对阵信息文字
+    UIImageView *imageView =[[UIImageView alloc]initWithFrame:CGRectZero];
+    imageView.contentMode =UIViewContentModeScaleAspectFit;
+    imageView.image =[UIImage imageNamed:@"duizhantongji"];
+    [alert.topView addSubview:imageView];
+    [imageView makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(oneView.bgImageView.top).offset(-25);
+        make.left.equalTo(oneView.left).offset(10);
+        make.right.equalTo(oneView.right).offset(-10);
+        make.height.equalTo(35);
+    }];
+    //对阵信息上一部分
+    CampView *twoView =[[CampView alloc]initWithFrame:CGRectZero type:CampViewTypeGoodPerson];
+    twoView.typeImageView.image =[UIImage imageNamed:@"win"];
+    [alert.btmView addSubview:twoView];
+
+    [twoView makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(alert.btmView.top);
+        make.left.equalTo(alert.btmView.left).offset(10);
+        make.right.equalTo(alert.btmView.right).offset(-10);
+        make.height.equalTo(150);
+    }];
 }
 
 //人物形象
 - (void)createCharactorRoom {
     self.characView = [[MSUCharactorView alloc] initWithFrame:CGRectMake(0, 64, WIDTH, HEIGHT - 64)];
     [self.view addSubview:_characView];
-    
-    [_characView.wordBtn addTarget:self action:@selector(characBtnClick:) forControlEvents:UIControlEventTouchUpInside];
+    [_characView.wordBtn addTarget:self action:@selector(keywordsButtonClick:) forControlEvents:UIControlEventTouchUpInside];
     [_characView.videoBtn addTarget:self action:@selector(characBtnClick:) forControlEvents:UIControlEventTouchUpInside];
     [_characView.passBtn addTarget:self action:@selector(characBtnClick:) forControlEvents:UIControlEventTouchUpInside];
- 
-
 }
 
 - (void)characBtnClick:(UIButton *)sender{
