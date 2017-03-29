@@ -8,7 +8,7 @@
 
 #import "AlertBgView.h"
 
-@interface AlertBgView ()
+@interface AlertBgView () <UIGestureRecognizerDelegate>
 
 @end
 
@@ -24,7 +24,9 @@
         self.centerView.backgroundColor =[UIColor clearColor];
 
         self.frame =CGRectMake(0, 0, CGRectGetWidth(frame), CGRectGetHeight(frame));
-        [self addGestureRecognizer:[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(didBgView:)]];
+        UITapGestureRecognizer *top =[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(didBgView:)];
+        top.delegate =self;
+        [self addGestureRecognizer:top];
     }
     return self;
 }
@@ -46,11 +48,26 @@
 }
 
 - (void)showView {
-    [[[UIApplication sharedApplication]keyWindow] addSubview:self];
+    UIWindow *windiw =[[UIApplication sharedApplication]keyWindow];
+    if (!windiw) {
+        windiw =[[[UIApplication sharedApplication]windows] lastObject];
+    }
+    NSInteger count =windiw.subviews.count;
+    [windiw insertSubview:self atIndex:count];
 }
 
 - (void)removeView {
     [self removeFromSuperview];
+}
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch {
+    // 点击tableViewCell不执行Touch事件
+    UIView *view =touch.view;
+    NSLog(@"touch=%ld", view.tag);
+    if ([NSStringFromClass([touch.view class]) isEqualToString:@"UITableViewCellContentView"] ||
+        touch.view.tag ==2020) {
+        return NO;
+    }
+    return  YES;
 }
 
 

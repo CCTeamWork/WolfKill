@@ -11,8 +11,7 @@
 
 @implementation MSUAlertDetailView
 
-- (instancetype)initWithFrame:(CGRect)frame
-{
+- (instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
         
         [self createView];
@@ -27,6 +26,8 @@
     CGFloat navWid = WIDTH -80;
     UIView *navView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, navWid, 100)];
     [self addSubview:navView];
+    //该tag值不可改变(会影响点击事件)
+    navView.tag =2020;
     navView.backgroundColor = MIMABGCOLOR;
     
     //密码图片
@@ -53,7 +54,7 @@
         self.sureOrCancelBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         [_sureOrCancelBtn setImage:[UIImage imageNamed:btnArr[i]] forState:UIControlStateNormal];
         _sureOrCancelBtn.adjustsImageWhenHighlighted = NO;
-        [navView addSubview:self.sureOrCancelBtn];
+        [self addSubview:self.sureOrCancelBtn];
         [_sureOrCancelBtn makeConstraints:^(MASConstraintMaker *make) {
             make.bottom.equalTo(navView.bottom).offset(25);
             make.left.equalTo(navView.left).offset(leftSpace + ((navWid - 60) * 0.5 + leftSpace) * i);
@@ -125,6 +126,11 @@
         }
         return YES;
     }
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [super touchesBegan:touches withEvent:event];
+    [self endEditing:NO];
 }
 
 @end

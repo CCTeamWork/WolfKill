@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		17B8970DFA14C9B083ABE3C6 /* libPods-WolfKill.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A751F22BF325383D344B37B8 /* libPods-WolfKill.a */; };
+		D72D56B01E8B8C7700B38425 /* SelectFriendView.m in Sources */ = {isa = PBXBuildFile; fileRef = D72D56AF1E8B8C7700B38425 /* SelectFriendView.m */; };
+		D72D56B21E8B8C8C00B38425 /* SelectFriendView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D72D56B11E8B8C8C00B38425 /* SelectFriendView.xib */; };
+		D72D56B61E8B8FB200B38425 /* FriendsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D72D56B41E8B8FB200B38425 /* FriendsCell.m */; };
+		D72D56B71E8B8FB200B38425 /* FriendsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D72D56B51E8B8FB200B38425 /* FriendsCell.xib */; };
+		D72D56B81E8B978E00B38425 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F027281D1E8A31E000823F53 /* Assets.xcassets */; };
+		D72D57271E8BE22800B38425 /* ButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = D72D57261E8BE22800B38425 /* ButtonView.m */; };
+		D72D57291E8BE23600B38425 /* ButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D72D57281E8BE23600B38425 /* ButtonView.xib */; };
 		D74D7F671E8A491600533A99 /* AlertBgView.m in Sources */ = {isa = PBXBuildFile; fileRef = D74D7F661E8A491600533A99 /* AlertBgView.m */; };
 		D74D7F691E8A492700533A99 /* AlertBgView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D74D7F681E8A492700533A99 /* AlertBgView.xib */; };
 		D74D7F6C1E8A509900533A99 /* MainCenterView.m in Sources */ = {isa = PBXBuildFile; fileRef = D74D7F6B1E8A509900533A99 /* MainCenterView.m */; };
@@ -21,7 +28,6 @@
 		F02728131E8A31E000823F53 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F02728121E8A31E000823F53 /* main.m */; };
 		F02728161E8A31E000823F53 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F02728151E8A31E000823F53 /* AppDelegate.m */; };
 		F027281C1E8A31E000823F53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F027281A1E8A31E000823F53 /* Main.storyboard */; };
-		F027281E1E8A31E000823F53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F027281D1E8A31E000823F53 /* Assets.xcassets */; };
 		F02728211E8A31E000823F53 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F027281F1E8A31E000823F53 /* LaunchScreen.storyboard */; };
 		F027282C1E8A31E000823F53 /* WolfKillTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F027282B1E8A31E000823F53 /* WolfKillTests.m */; };
 		F02728371E8A31E000823F53 /* WolfKillUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F02728361E8A31E000823F53 /* WolfKillUITests.m */; };
@@ -135,6 +141,15 @@
 /* Begin PBXFileReference section */
 		A751F22BF325383D344B37B8 /* libPods-WolfKill.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WolfKill.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B10732A07A75E62BFAC0A0B4 /* Pods-WolfKill.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WolfKill.release.xcconfig"; path = "Pods/Target Support Files/Pods-WolfKill/Pods-WolfKill.release.xcconfig"; sourceTree = "<group>"; };
+		D72D56AE1E8B8C7700B38425 /* SelectFriendView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectFriendView.h; sourceTree = "<group>"; };
+		D72D56AF1E8B8C7700B38425 /* SelectFriendView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectFriendView.m; sourceTree = "<group>"; };
+		D72D56B11E8B8C8C00B38425 /* SelectFriendView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectFriendView.xib; sourceTree = "<group>"; };
+		D72D56B31E8B8FB200B38425 /* FriendsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendsCell.h; sourceTree = "<group>"; };
+		D72D56B41E8B8FB200B38425 /* FriendsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendsCell.m; sourceTree = "<group>"; };
+		D72D56B51E8B8FB200B38425 /* FriendsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FriendsCell.xib; sourceTree = "<group>"; };
+		D72D57251E8BE22800B38425 /* ButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonView.h; sourceTree = "<group>"; };
+		D72D57261E8BE22800B38425 /* ButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonView.m; sourceTree = "<group>"; };
+		D72D57281E8BE23600B38425 /* ButtonView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ButtonView.xib; sourceTree = "<group>"; };
 		D74D7F651E8A491600533A99 /* AlertBgView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertBgView.h; sourceTree = "<group>"; };
 		D74D7F661E8A491600533A99 /* AlertBgView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertBgView.m; sourceTree = "<group>"; };
 		D74D7F681E8A492700533A99 /* AlertBgView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlertBgView.xib; sourceTree = "<group>"; };
@@ -317,6 +332,9 @@
 				D74D7F781E8A6F1B00533A99 /* MessageCell.h */,
 				D74D7F791E8A6F1B00533A99 /* MessageCell.m */,
 				D74D7F7A1E8A6F1B00533A99 /* MessageCell.xib */,
+				D72D56B31E8B8FB200B38425 /* FriendsCell.h */,
+				D72D56B41E8B8FB200B38425 /* FriendsCell.m */,
+				D72D56B51E8B8FB200B38425 /* FriendsCell.xib */,
 			);
 			path = SubView;
 			sourceTree = "<group>";
@@ -556,6 +574,12 @@
 				D74D7F7D1E8A892500533A99 /* CampView.h */,
 				D74D7F7E1E8A892500533A99 /* CampView.m */,
 				D74D7F801E8A893500533A99 /* CampView.xib */,
+				D72D56AE1E8B8C7700B38425 /* SelectFriendView.h */,
+				D72D56AF1E8B8C7700B38425 /* SelectFriendView.m */,
+				D72D56B11E8B8C8C00B38425 /* SelectFriendView.xib */,
+				D72D57251E8BE22800B38425 /* ButtonView.h */,
+				D72D57261E8BE22800B38425 /* ButtonView.m */,
+				D72D57281E8BE23600B38425 /* ButtonView.xib */,
 				D74D7F771E8A6EF900533A99 /* SubView */,
 			);
 			path = Views;
@@ -688,15 +712,17 @@
 				F02729961E8A359900823F53 /* xianhuadi.png in Resources */,
 				F027295D1E8A359900823F53 /* gou.png in Resources */,
 				F027297E1E8A359900823F53 /* qipao_2x_right.png in Resources */,
+				D72D56B21E8B8C8C00B38425 /* SelectFriendView.xib in Resources */,
 				F027296D1E8A359900823F53 /* jinghui.png in Resources */,
 				F02729821E8A359900823F53 /* quexiao_2x.png in Resources */,
-				F027281E1E8A31E000823F53 /* Assets.xcassets in Resources */,
 				D74D7F731E8A532400533A99 /* yan.ttf in Resources */,
 				F02729531E8A359900823F53 /* chakanxiangqing_01.png in Resources */,
 				F02729761E8A359900823F53 /* lose.png in Resources */,
+				D72D56B81E8B978E00B38425 /* Assets.xcassets in Resources */,
 				F02729771E8A359900823F53 /* mima2_2x.png in Resources */,
 				F02729701E8A359900823F53 /* kaiju_2x.png in Resources */,
 				F027297B1E8A359900823F53 /* qinglvzhengyin.png in Resources */,
+				D72D57291E8BE23600B38425 /* ButtonView.xib in Resources */,
 				F027298E1E8A359900823F53 /* tichuwanjia.png in Resources */,
 				F027299A1E8A359900823F53 /* yanjing_2x.png in Resources */,
 				F027298C1E8A359900823F53 /* siwang_2x.png in Resources */,
@@ -708,6 +734,7 @@
 				F02729731E8A359900823F53 /* liwu.png in Resources */,
 				F02729751E8A359900823F53 /* liwuxiaodikuang.PNG in Resources */,
 				F02729891E8A359900823F53 /* shou.PNG in Resources */,
+				D72D56B71E8B8FB200B38425 /* FriendsCell.xib in Resources */,
 				F02729611E8A359900823F53 /* heiying1_2x.png in Resources */,
 				F02729661E8A359900823F53 /* jiahaoyou_05.png in Resources */,
 				F02729561E8A359900823F53 /* dangao_2x.png in Resources */,
@@ -838,12 +865,13 @@
 				F02729A71E8A3B5800823F53 /* MSUMainController.m in Sources */,
 				F02729AA1E8A3B8A00823F53 /* MSUNavgitionView.m in Sources */,
 				F02728161E8A31E000823F53 /* AppDelegate.m in Sources */,
+				D72D57271E8BE22800B38425 /* ButtonView.m in Sources */,
+				D72D56B01E8B8C7700B38425 /* SelectFriendView.m in Sources */,
 				F02728131E8A31E000823F53 /* main.m in Sources */,
 				D74D7F671E8A491600533A99 /* AlertBgView.m in Sources */,
-
 				D74D7F7B1E8A6F1B00533A99 /* MessageCell.m in Sources */,
 				D74D7F7F1E8A892500533A99 /* CampView.m in Sources */,
-
+				D72D56B61E8B8FB200B38425 /* FriendsCell.m in Sources */,
 				F02729B01E8A68BA00823F53 /* MSUAlertDetailView.m in Sources */,
 				D74D7F6C1E8A509900533A99 /* MainCenterView.m in Sources */,
 				F02729AD1E8A438200823F53 /* MSUCharactorView.m in Sources */,

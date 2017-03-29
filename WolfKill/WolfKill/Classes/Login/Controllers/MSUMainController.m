@@ -11,10 +11,17 @@
 #import "MSUNavgitionView.h"
 #import "MSUCharactorView.h"
 
-#import "AlertBgView.h"
 #import "MSUAlertDetailView.h"
+//弹出框背景
+#import "AlertBgView.h"
+// 中间显示提示框
 #import "MainCenterView.h"
+// 对战阵营
 #import "CampView.h"
+// 选择邀请好友
+#import "SelectFriendView.h"
+// 查看玩家资料
+#import "ButtonView.h"
 
 @interface MSUMainController ()<UITextFieldDelegate>
 
@@ -39,6 +46,7 @@
     // 中间视图
     self.centerView =[[[NSBundle mainBundle]loadNibNamed:NSStringFromClass([MainCenterView class]) owner:nil options:nil]firstObject];
     _centerView.backgroundColor =[UIColor clearColor];
+    [self.centerView.prepareButton addTarget:self action:@selector(prepareButtonClick:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:_centerView];
     [_centerView makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.view.top).offset(64+15);
@@ -46,6 +54,11 @@
         make.right.equalTo(self.view.right).offset(-100);
         make.bottom.equalTo(self.view.bottom).offset(100);
     }];
+    
+    AlertBgView *alert =[[AlertBgView alloc]initWithFrame:CGRectMake(0, 0, WIDTH, HEIGHT)];
+    alert.clickRemove =NO;
+    alert.bgColor =[UIColor colorWithWhite:0 alpha:0.8];
+    [alert showView];
 }
 
 //导航栏
@@ -69,15 +82,31 @@
     
     _centerView.topText =@"宋清正\n测试文字\n(0s)";
     _centerView.centerText =@"是否使用毒药,是都使用毒药?";
-
 }
 
 - (void)gouBtnClick:(UIButton *)sender{
     
+    
 }
 
-- (void)sureOrCancelBtnClick:(UIButton *)sender{
+- (void)sureOrCancelBtnClick:(UIButton *)sender {
+    [_msuAlertView.superview.superview removeFromSuperview];
+
+    AlertBgView *alert =[[AlertBgView alloc]initWithFrame:CGRectMake(0, 0, WIDTH, HEIGHT)];
+    alert.clickRemove =YES;
+    alert.bgColor =[UIColor colorWithWhite:0 alpha:0.4];
+    [alert showView];
     
+    alert.centerView_height.constant =200;
+    ButtonView *btnView =[[[NSBundle mainBundle]loadNibNamed:@"ButtonView" owner:nil options:nil] firstObject];
+    [alert.centerView addSubview:btnView];
+
+    [btnView makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(alert.centerView.top);
+        make.left.equalTo(alert.centerView.left);
+        make.right.equalTo(alert.centerView.right);
+        make.height.equalTo(200);
+    }];
 }
 
 - (void)renBtnClick:(UIButton *)sender{
@@ -138,14 +167,75 @@
 
 - (void)characBtnClick:(UIButton *)sender{
     AlertBgView *alert =[[AlertBgView alloc]initWithFrame:CGRectMake(0, 0, WIDTH, HEIGHT)];
-    alert.clickRemove =YES;
+    alert.clickRemove =NO;
     alert.bgColor =[UIColor colorWithWhite:0 alpha:0.8];
     [alert showView];
     alert.centerView_center.constant =HEIGHT/2-20;
     alert.centerView_height.constant =0;
+    
+    SelectFriendView *friendView =[[[NSBundle mainBundle]loadNibNamed:@"SelectFriendView" owner:nil options:nil] firstObject];
+    [friendView removeButtonWithBlock:^{
+        [friendView removeFromSuperview];
+        [alert removeView];
+    }];
+    [alert.topView addSubview:friendView];
+    
+    [friendView makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(alert.topView.top).offset(10);
+        make.left.equalTo(alert.topView.left).offset(10);
+        make.right.equalTo(alert.topView.right).offset(-10);
+        make.bottom.equalTo(alert.topView.bottom).offset(-10);
+    }];
 }
 
+#pragma mark 准备与取消准备
+- (void)prepareButtonClick:(UIButton*)button {
+    NSLog(@"button=%@", button);
+    AlertBgView *alert =[[AlertBgView alloc]initWithFrame:CGRectMake(0, 0, WIDTH, HEIGHT)];
+    alert.clickRemove =YES;
+    alert.bgColor =[UIColor colorWithWhite:0 alpha:0.8];
+    [alert showView];
+    alert.centerView_height.constant =200;
 
+    UILabel * titleName =[[UILabel alloc]init];
+    titleName.text =@"你的身份是: 狼人 (5s)";
+    titleName.textAlignment =NSTextAlignmentCenter;
+    titleName.font =[UIFont boldSystemFontOfSize:20];
+    titleName.textColor =[UIColor whiteColor];
+    [alert.topView addSubview:titleName];
+    
+    [titleName makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(alert.topView.bottom).offset(-40);
+        make.left.equalTo(alert.topView.left);
+        make.right.equalTo(alert.topView.right);
+    }];
+    
+    UIImageView * imageView =[[UIImageView alloc]init];
+    imageView.image =[UIImage imageNamed:@"langren"];
+    imageView.contentMode =UIViewContentModeScaleAspectFit;
+    [alert.centerView addSubview:imageView];
+    
+    [imageView makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(alert.centerView.top);
+        make.left.equalTo(alert.centerView.left);
+        make.right.equalTo(alert.centerView.right);
+        make.bottom.equalTo(alert.centerView.bottom);
+    }];
+    
+    UILabel * commentLabel =[[UILabel alloc]init];
+    commentLabel.text =@"你的身份是: 狼人 (5s)";
+    commentLabel.textAlignment =NSTextAlignmentCenter;
+    commentLabel.font =[UIFont boldSystemFontOfSize:15];
+    commentLabel.numberOfLines =0;
+    commentLabel.textColor =[UIColor whiteColor];
+    [alert.btmView addSubview:commentLabel];
+    
+    [commentLabel makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(alert.btmView.top);
+        make.left.equalTo(alert.btmView.left).offset(14);
+        make.right.equalTo(alert.btmView.right).offset(-20);
+    }];
+}
 
 
 @end
