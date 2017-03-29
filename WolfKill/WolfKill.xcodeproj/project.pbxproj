@@ -113,6 +113,9 @@
 		F02729AA1E8A3B8A00823F53 /* MSUNavgitionView.m in Sources */ = {isa = PBXBuildFile; fileRef = F02729A91E8A3B8A00823F53 /* MSUNavgitionView.m */; };
 		F02729AD1E8A438200823F53 /* MSUCharactorView.m in Sources */ = {isa = PBXBuildFile; fileRef = F02729AC1E8A438200823F53 /* MSUCharactorView.m */; };
 		F02729B01E8A68BA00823F53 /* MSUAlertDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = F02729AF1E8A68BA00823F53 /* MSUAlertDetailView.m */; };
+		F02E41AD1E8B8C7C00E80017 /* MSULeftCharactorView.m in Sources */ = {isa = PBXBuildFile; fileRef = F02E41AC1E8B8C7C00E80017 /* MSULeftCharactorView.m */; };
+		F02E41B11E8B8D0100E80017 /* MSURightCharactorView.m in Sources */ = {isa = PBXBuildFile; fileRef = F02E41B01E8B8D0100E80017 /* MSURightCharactorView.m */; };
+		F02E41B41E8B8D1200E80017 /* MSUBottomCharactorView.m in Sources */ = {isa = PBXBuildFile; fileRef = F02E41B31E8B8D1200E80017 /* MSUBottomCharactorView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -254,10 +257,16 @@
 		F02729A31E8A3B5800823F53 /* MSUMainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSUMainController.m; sourceTree = "<group>"; };
 		F02729A81E8A3B8A00823F53 /* MSUNavgitionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSUNavgitionView.h; sourceTree = "<group>"; };
 		F02729A91E8A3B8A00823F53 /* MSUNavgitionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSUNavgitionView.m; sourceTree = "<group>"; };
-		F02729AB1E8A438200823F53 /* MSUCharactorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSUCharactorView.h; sourceTree = "<group>"; };
-		F02729AC1E8A438200823F53 /* MSUCharactorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSUCharactorView.m; sourceTree = "<group>"; };
+		F02729AB1E8A438200823F53 /* MSUCharactorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSUCharactorView.h; path = ../MSUCharactorView.h; sourceTree = "<group>"; };
+		F02729AC1E8A438200823F53 /* MSUCharactorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSUCharactorView.m; path = ../MSUCharactorView.m; sourceTree = "<group>"; };
 		F02729AE1E8A68BA00823F53 /* MSUAlertDetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSUAlertDetailView.h; sourceTree = "<group>"; };
 		F02729AF1E8A68BA00823F53 /* MSUAlertDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSUAlertDetailView.m; sourceTree = "<group>"; };
+		F02E41AB1E8B8C7C00E80017 /* MSULeftCharactorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSULeftCharactorView.h; path = ../MSULeftCharactorView.h; sourceTree = "<group>"; };
+		F02E41AC1E8B8C7C00E80017 /* MSULeftCharactorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSULeftCharactorView.m; path = ../MSULeftCharactorView.m; sourceTree = "<group>"; };
+		F02E41AF1E8B8D0100E80017 /* MSURightCharactorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSURightCharactorView.h; sourceTree = "<group>"; };
+		F02E41B01E8B8D0100E80017 /* MSURightCharactorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSURightCharactorView.m; sourceTree = "<group>"; };
+		F02E41B21E8B8D1200E80017 /* MSUBottomCharactorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSUBottomCharactorView.h; sourceTree = "<group>"; };
+		F02E41B31E8B8D1200E80017 /* MSUBottomCharactorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSUBottomCharactorView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -541,10 +550,9 @@
 		F02729A61E8A3B5800823F53 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F02E41AE1E8B8CAE00E80017 /* CharactorView */,
 				F02729A81E8A3B8A00823F53 /* MSUNavgitionView.h */,
 				F02729A91E8A3B8A00823F53 /* MSUNavgitionView.m */,
-				F02729AB1E8A438200823F53 /* MSUCharactorView.h */,
-				F02729AC1E8A438200823F53 /* MSUCharactorView.m */,
 				D74D7F651E8A491600533A99 /* AlertBgView.h */,
 				D74D7F661E8A491600533A99 /* AlertBgView.m */,
 				D74D7F681E8A492700533A99 /* AlertBgView.xib */,
@@ -559,6 +567,21 @@
 				D74D7F771E8A6EF900533A99 /* SubView */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		F02E41AE1E8B8CAE00E80017 /* CharactorView */ = {
+			isa = PBXGroup;
+			children = (
+				F02729AB1E8A438200823F53 /* MSUCharactorView.h */,
+				F02729AC1E8A438200823F53 /* MSUCharactorView.m */,
+				F02E41AB1E8B8C7C00E80017 /* MSULeftCharactorView.h */,
+				F02E41AC1E8B8C7C00E80017 /* MSULeftCharactorView.m */,
+				F02E41AF1E8B8D0100E80017 /* MSURightCharactorView.h */,
+				F02E41B01E8B8D0100E80017 /* MSURightCharactorView.m */,
+				F02E41B21E8B8D1200E80017 /* MSUBottomCharactorView.h */,
+				F02E41B31E8B8D1200E80017 /* MSUBottomCharactorView.m */,
+			);
+			path = CharactorView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -840,12 +863,13 @@
 				F02728161E8A31E000823F53 /* AppDelegate.m in Sources */,
 				F02728131E8A31E000823F53 /* main.m in Sources */,
 				D74D7F671E8A491600533A99 /* AlertBgView.m in Sources */,
-
 				D74D7F7B1E8A6F1B00533A99 /* MessageCell.m in Sources */,
+				F02E41AD1E8B8C7C00E80017 /* MSULeftCharactorView.m in Sources */,
 				D74D7F7F1E8A892500533A99 /* CampView.m in Sources */,
-
 				F02729B01E8A68BA00823F53 /* MSUAlertDetailView.m in Sources */,
 				D74D7F6C1E8A509900533A99 /* MainCenterView.m in Sources */,
+				F02E41B41E8B8D1200E80017 /* MSUBottomCharactorView.m in Sources */,
+				F02E41B11E8B8D0100E80017 /* MSURightCharactorView.m in Sources */,
 				F02729AD1E8A438200823F53 /* MSUCharactorView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
