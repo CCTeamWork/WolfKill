@@ -11,8 +11,9 @@
 @interface AlertBgView : UIView
 // 顶部视图
 @property (weak, nonatomic) IBOutlet UIView *topView;
-// 中部视图高度
+// 中部视图高度/center
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *centerView_height;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *centerView_center;
 // 中部视图
 @property (weak, nonatomic) IBOutlet UIView *centerView;
 // 底部视图
