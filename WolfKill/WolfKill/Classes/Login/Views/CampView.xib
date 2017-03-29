@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CampView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="209"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VMk-bC-mzl">
+                    <rect key="frame" x="48" y="25" width="225" height="160"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="160" id="UIG-hX-kkc"/>
+                        <constraint firstAttribute="width" constant="225" id="XhI-2G-Osc"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="goodZY"/>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="win" translatesAutoresizingMaskIntoConstraints="NO" id="0Um-ez-SQQ">
+                    <rect key="frame" x="216" y="25" width="52" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="0Um-ez-SQQ" secondAttribute="height" multiplier="26:17" id="QIQ-aF-CIi"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BMM-Fr-REZ">
+                    <rect key="frame" x="48" y="65" width="225" height="120"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="VMk-bC-mzl" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="23Q-OX-DZt"/>
+                <constraint firstItem="0Um-ez-SQQ" firstAttribute="trailing" secondItem="VMk-bC-mzl" secondAttribute="trailing" constant="-5" id="Lgv-tr-wiz"/>
+                <constraint firstItem="BMM-Fr-REZ" firstAttribute="trailing" secondItem="VMk-bC-mzl" secondAttribute="trailing" id="apS-ST-Qmb"/>
+                <constraint firstItem="VMk-bC-mzl" firstAttribute="top" secondItem="0Um-ez-SQQ" secondAttribute="top" id="fpM-f1-8Yy"/>
+                <constraint firstItem="BMM-Fr-REZ" firstAttribute="leading" secondItem="VMk-bC-mzl" secondAttribute="leading" id="hjC-bY-1DL"/>
+                <constraint firstItem="VMk-bC-mzl" firstAttribute="bottom" secondItem="BMM-Fr-REZ" secondAttribute="bottom" id="nd8-qo-KQL"/>
+                <constraint firstItem="VMk-bC-mzl" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="vsc-hf-G6M"/>
+                <constraint firstItem="BMM-Fr-REZ" firstAttribute="top" secondItem="VMk-bC-mzl" secondAttribute="top" constant="40" id="zhX-Su-MuZ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bgImageView" destination="VMk-bC-mzl" id="zAe-c3-c0B"/>
+                <outlet property="btnBgView" destination="BMM-Fr-REZ" id="iit-7P-4qv"/>
+                <outlet property="center_place" destination="vsc-hf-G6M" id="L6W-E5-r4M"/>
+                <outlet property="typeImageView" destination="0Um-ez-SQQ" id="Hig-Za-dP2"/>
+            </connections>
+            <point key="canvasLocation" x="-59" y="55.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="goodZY" width="213" height="146"/>
+        <image name="win" width="52" height="34"/>
+    </resources>
+</document>

@@ -41,7 +41,15 @@
 #define YELLOWCOLOR [UIColor colorWithRed:221/255.0 green:215/255.0 blue:185/255.0 alpha:1.0]
 #define DEEPREDCOLOR [UIColor colorWithRed:85/255.0 green:27/255.0 blue:29/255.0 alpha:1.0]
 
-
+///分割线和文字 居左对齐
+#define TableViewFileAndLineTypeLeft \
+if ([tableView respondsToSelector:@selector(setSeparatorInset:)]) {     \
+[tableView setSeparatorInset:UIEdgeInsetsZero];                     \
+} if ([tableView respondsToSelector:@selector(setLayoutMargins:)]) {    \
+[tableView setLayoutMargins:UIEdgeInsetsZero];                      \
+} if ([cell respondsToSelector:@selector(setLayoutMargins:)]) {         \
+[cell setLayoutMargins:UIEdgeInsetsZero];                           \
+}
 //Debug调试
 #ifdef DEBUG
 #define NSLog(format, ...) printf("class: <%p %s:(%d) > method: %s \n%s\n", self, [[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String], __LINE__, __PRETTY_FUNCTION__, [[NSString stringWithFormat:(format), ##__VA_ARGS__] UTF8String] )
