@@ -41,9 +41,9 @@
     [self.view addSubview:_centerView];
     [_centerView makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.view.top).offset(64+15);
-        make.left.equalTo(_characView.leftCharactBtn.right).offset(10);
-        make.right.equalTo(_characView.rightCharactBtn.left).offset(-10);
-        make.bottom.equalTo(_characView.bottomCharactBtn.top).offset(10);
+        make.left.equalTo(_characView.charactBtn.right).offset(10);
+        make.right.equalTo(_characView.charactBtn.left).offset(-10);
+        make.bottom.equalTo(_characView.charactBtn.top).offset(10);
     }];
 }
 

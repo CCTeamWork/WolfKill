@@ -22,8 +22,8 @@
 
 //定义尺寸相关
 #define statusHeight 20
-#define characHeight (HEIGHT - 64 - 44 - 20 - 6 * 10)/6
-#define characWidth 40
+#define characHeight (HEIGHT - 64 - 44 - 60 - 6 * 10)/6
+#define characWidth 30
 #define bottomSpace ((WIDTH - 40) - (5 * characWidth))/4
 #define leftSpace 20
 #define rightSpace 20
