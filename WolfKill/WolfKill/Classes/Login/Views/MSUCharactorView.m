@@ -406,7 +406,7 @@
         _audioIma.image = [UIImage imageNamed:@"yuyin"];
         [_audioIma makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(_charactBtn.top).offset(10);
-            make.left.equalTo(_charactBtn.right).offset(0);
+            make.right.equalTo(_charactBtn.left).offset(0);
             make.width.equalTo(20);
             make.height.equalTo(30);
         }];
@@ -426,7 +426,7 @@
         [bgView addSubview:_timeBtn];
         [_timeBtn makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(_audioIma.top).offset(0);
-            make.right.equalTo(_charactBtn.left).offset(0);
+            make.right.equalTo(_audioIma.left).offset(0);
             make.width.equalTo(30);
             make.height.equalTo(20);
         }];
