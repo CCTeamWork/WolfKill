@@ -149,7 +149,13 @@
     }
     
     for (NSInteger index = 0; index < 3; index++) {
-        MSUBottomCharactorView *bottomView = [[MSUBottomCharactorView alloc] initWithFrame:CGRectMake( leftSpace + bottomSpace + (bottomSpace + characWidth) * index, HEIGHT - 64 - 44 - 10 - characHeight, 30 + characWidth + 20, characHeight)];
+        CGFloat botCenHei;
+        if (index == 1) {
+            botCenHei = HEIGHT - 64 - 44 - 10 - characHeight - 40;
+        }else{
+            botCenHei = HEIGHT - 64 - 44 - 10 - characHeight;
+        }
+        MSUBottomCharactorView *bottomView = [[MSUBottomCharactorView alloc] initWithFrame:CGRectMake( leftSpace + bottomSpace + (bottomSpace + characWidth) * index,  botCenHei, 30 + characWidth + 20, characHeight)];
         [bgView addSubview:bottomView];
         [self.charactArr addObject:bottomView.charactBtn];
         [self.charactArr addObject:bottomView.charactBtn];

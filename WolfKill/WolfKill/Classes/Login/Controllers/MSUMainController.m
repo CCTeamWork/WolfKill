@@ -15,7 +15,7 @@
 #import "MSUAlertDetailView.h"
 #import "MainCenterView.h"
 #import "CampView.h"
-#import "MSUWitchView.h"
+#import "MSUPoliceOrWitchView.h"
 
 @interface MSUMainController ()<UITextFieldDelegate>
 
@@ -54,11 +54,10 @@
     _centerView.centerText =@"";
     
 
-    
-    MSUWitchView *witch = [[MSUWitchView alloc] initWithFrame:CGRectMake(40, HEIGHT*0.5 - 120, WIDTH-80, 150)];
-    witch.backgroundColor = [UIColor clearColor];
-    [self.view addSubview:witch];
-    
+    MSUPoliceOrWitchView *chooseView = [[MSUPoliceOrWitchView alloc] initWithFrame:CGRectMake(40, HEIGHT*0.5 - 120, WIDTH-80, 150) isPolice:NO];
+    chooseView.backgroundColor = [UIColor clearColor];
+    [self.view addSubview:chooseView];
+  
     
 
 }

@@ -8,6 +8,7 @@
 
 #import "MSUWitchView.h"
 #import "MSUHeader.h"
+#import "NSString+ChangeString.h"
 
 @implementation MSUWitchView
 
@@ -29,7 +30,7 @@
 
     
     UILabel *witchWordLab = [[UILabel alloc] init];
-    [witchWordLab setAttributedText:[self changeLabelWithText:@"4号玩家被刀\n是否使用解药"]];
+    [witchWordLab setAttributedText:[NSString changeLabelWithText:@"4号玩家被刀\n是否使用解药" FontFormatName:GAMEFONT FontSize:26 ReplaceOtherSize:20 RangeLocation:0 WithRangeLenth:2]];
 //    witchWordLab.font = [UIFont systemFontOfSize:20];
     witchWordLab.numberOfLines = 0;
     witchWordLab.textAlignment = NSTextAlignmentCenter;
@@ -60,19 +61,6 @@
     }
 }
 
-- (NSMutableAttributedString *)changeLabelWithText:(NSString*)needText
-{
-    NSMutableAttributedString *attrString = [[NSMutableAttributedString alloc] initWithString:needText];
-    
-    [attrString addAttribute:NSFontAttributeName value:[UIFont fontWithName:GAMEFONT size:26] range:NSMakeRange(0,2)];
-    [attrString addAttribute:NSForegroundColorAttributeName value:[UIColor colorWithRed:255/255.0 green:71/255.0 blue:89/255.0 alpha:1] range:NSMakeRange(0,2)];
-    
-    [attrString addAttribute:NSKernAttributeName value:@1.0f range:NSMakeRange(0, needText.length)];
-    
-    [attrString addAttribute:NSFontAttributeName value:[UIFont fontWithName:GAMEFONT size:20] range:NSMakeRange(2,needText.length-2)];
-    [attrString addAttribute:NSForegroundColorAttributeName value:[UIColor whiteColor] range:NSMakeRange(2,needText.length-2)];
-    
-    return attrString;
-}
+
 
 @end
