@@ -137,7 +137,12 @@
 }
 
 - (void)characBtnClick:(UIButton *)sender{
-
+    AlertBgView *alert =[[AlertBgView alloc]initWithFrame:CGRectMake(0, 0, WIDTH, HEIGHT)];
+    alert.clickRemove =YES;
+    alert.bgColor =[UIColor colorWithWhite:0 alpha:0.8];
+    [alert showView];
+    alert.centerView_center.constant =HEIGHT/2-20;
+    alert.centerView_height.constant =0;
 }
 
 
