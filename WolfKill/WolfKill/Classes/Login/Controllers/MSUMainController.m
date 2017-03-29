@@ -12,14 +12,17 @@
 #import "MSUCharactorView.h"
 
 #import "AlertBgView.h"
+#import "MSUAlertDetailView.h"
 #import "MainCenterView.h"
 
-@interface MSUMainController ()
+@interface MSUMainController ()<UITextFieldDelegate>
 
 //两边人物视图
 @property (nonatomic, strong) MSUCharactorView *characView;
 //中间所有的视图
 @property (nonatomic, strong) MainCenterView *centerView;
+//设置密码视图
+@property (nonatomic , strong) MSUAlertDetailView *msuAlertView;
 
 @end
 
@@ -55,11 +58,23 @@
 - (void)btnClick:(UIButton *)sender {
     AlertBgView *alert =[[AlertBgView alloc]initWithFrame:CGRectMake(0, 0, WIDTH, HEIGHT)];
     alert.clickRemove =YES;
-    alert.bgColor =[UIColor colorWithWhite:0 alpha:0.5];
+    alert.bgColor =[UIColor colorWithWhite:0 alpha:0.4];
     [alert showView];
-        
+    
+    self.msuAlertView = [[MSUAlertDetailView alloc] initWithFrame:CGRectMake(40, 0, WIDTH-80, 100)];
+    [alert.centerView addSubview:_msuAlertView];
+    [_msuAlertView.gouBtn addTarget:self action:@selector(gouBtnClick:) forControlEvents:UIControlEventTouchUpInside];
+    [_msuAlertView.sureOrCancelBtn addTarget:self action:@selector(sureOrCancelBtnClick:) forControlEvents:UIControlEventTouchUpInside];
+    
     _centerView.topText =@"宋清正\n测试文字\n(0s)";
+}
 
+- (void)gouBtnClick:(UIButton *)sender{
+    
+}
+
+- (void)sureOrCancelBtnClick:(UIButton *)sender{
+    
 }
 
 - (void)renBtnClick:(UIButton *)sender{
@@ -70,10 +85,19 @@
 - (void)createCharactorRoom {
     self.characView = [[MSUCharactorView alloc] initWithFrame:CGRectMake(0, 64, WIDTH, HEIGHT - 64)];
     [self.view addSubview:_characView];
-    [_characView.wordBtn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
-    [_characView.videoBtn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
-    [_characView.passBtn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
+    
+    [_characView.wordBtn addTarget:self action:@selector(characBtnClick:) forControlEvents:UIControlEventTouchUpInside];
+    [_characView.videoBtn addTarget:self action:@selector(characBtnClick:) forControlEvents:UIControlEventTouchUpInside];
+    [_characView.passBtn addTarget:self action:@selector(characBtnClick:) forControlEvents:UIControlEventTouchUpInside];
+ 
+
 }
+
+- (void)characBtnClick:(UIButton *)sender{
+
+}
+
+
 
 
 @end

@@ -19,5 +19,7 @@
 @property (nonatomic , strong) UIButton *videoBtn;
 @property (nonatomic , strong) UIButton *giftBtn;
 @property (nonatomic , strong) UIButton *passBtn;
+@property (nonatomic , strong) UIImageView *roomOwnerIma;
+@property (nonatomic , strong) UIImageView *prepareIma;
 
 @end

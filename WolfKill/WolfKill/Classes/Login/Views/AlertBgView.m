@@ -21,6 +21,7 @@
         
         self.topView.backgroundColor =[UIColor clearColor];
         self.btmView.backgroundColor =[UIColor clearColor];
+        self.centerView.backgroundColor =[UIColor clearColor];
 
         self.frame =CGRectMake(0, 0, CGRectGetWidth(frame), CGRectGetHeight(frame));
         [self addGestureRecognizer:[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(didBgView:)]];
