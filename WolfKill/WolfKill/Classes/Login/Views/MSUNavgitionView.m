@@ -41,7 +41,7 @@
     roomlab.text = @"简单21122房";
     roomlab.textColor = WHITECOLOR;
     roomlab.textAlignment = NSTextAlignmentCenter;
-    [roomlab setFont:[UIFont systemFontOfSize:16]];
+    [roomlab setFont:[UIFont fontWithName:GAMEFONT size:16]];
     [navView addSubview:roomlab];
     [roomlab makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(navView.top).offset(statusHeight + 5);
@@ -61,10 +61,12 @@
         make.height.equalTo(30);
     }];
     
-    UIImageView *lockIma = [[UIImageView alloc] init];
-    lockIma.image = [UIImage imageNamed:@"lock"];
-    [navView addSubview:lockIma];
-    [lockIma makeConstraints:^(MASConstraintMaker *make) {
+    
+    self.lockBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [_lockBtn setImage:[UIImage imageNamed:@"lock"] forState:UIControlStateNormal];
+    [navView addSubview:_lockBtn];
+    _lockBtn.adjustsImageWhenHighlighted = NO;
+    [_lockBtn makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(navView.top).offset(statusHeight + 5);
         make.left.equalTo(roomlab.right).offset(0);
         make.width.equalTo(30);

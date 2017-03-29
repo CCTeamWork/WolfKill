@@ -14,6 +14,8 @@
 #define MAS_SHORTHAND_GLOBALS
 #import "Masonry.h"
 
+//字体
+#define GAMEFONT @"FashionFont052,by-www.6763.net"
 
 //自定义屏幕宽高
 #define WIDTH [UIScreen mainScreen].bounds.size.width

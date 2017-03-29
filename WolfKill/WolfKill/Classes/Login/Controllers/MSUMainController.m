@@ -23,6 +23,9 @@
 // 查看玩家资料
 #import "ButtonView.h"
 
+#import "MSUPoliceOrWitchView.h"
+
+
 @interface MSUMainController ()<UITextFieldDelegate>
 
 //两边人物视图
@@ -40,6 +43,9 @@
     [super viewDidLoad];
 
     self.view.backgroundColor = BGCOLOR;
+    
+ 
+
     
     [self createNavi];
     [self createCharactorRoom];
@@ -59,6 +65,13 @@
     alert.clickRemove =NO;
     alert.bgColor =[UIColor colorWithWhite:0 alpha:0.8];
     [alert showView];
+
+    _centerView.centerText =@"";
+    
+
+    MSUPoliceOrWitchView *chooseView = [[MSUPoliceOrWitchView alloc] initWithFrame:CGRectMake(40, HEIGHT*0.5 - 120, WIDTH-80, 150) isPolice:NO];
+    chooseView.backgroundColor = [UIColor clearColor];
+    [self.view addSubview:chooseView];
 }
 
 //导航栏
@@ -111,7 +124,6 @@
 
 - (void)renBtnClick:(UIButton *)sender{
     _centerView.topText =@"sqz宋清正sqz\n测试文字\n(15s)";
-    _centerView.centerText =@"不使用";
 }
 
 - (void)keywordsButtonClick:(UIButton*)button {
