@@ -9,7 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface MSUNavgitionView : UIView
+//邀请好友按钮
 @property (nonatomic , strong) UIButton *renBtn;
+//返回按钮
 @property (nonatomic , strong) UIButton *backBtn;
+//加锁按钮
+@property (nonatomic , strong) UIButton *lockBtn;
 
 @end

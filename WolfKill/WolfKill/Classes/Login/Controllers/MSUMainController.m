@@ -15,6 +15,7 @@
 #import "MSUAlertDetailView.h"
 #import "MainCenterView.h"
 #import "CampView.h"
+#import "MSUWitchView.h"
 
 @interface MSUMainController ()<UITextFieldDelegate>
 
@@ -34,6 +35,9 @@
 
     self.view.backgroundColor = BGCOLOR;
     
+ 
+
+    
     [self createNavi];
     [self createCharactorRoom];
     // 中间视图
@@ -46,6 +50,17 @@
         make.right.equalTo(self.view.right).offset(-100);
         make.bottom.equalTo(self.view.bottom).offset(100);
     }];
+    
+    _centerView.centerText =@"";
+    
+
+    
+    MSUWitchView *witch = [[MSUWitchView alloc] initWithFrame:CGRectMake(40, HEIGHT*0.5 - 120, WIDTH-80, 150)];
+    witch.backgroundColor = [UIColor clearColor];
+    [self.view addSubview:witch];
+    
+    
+
 }
 
 //导航栏
@@ -82,7 +97,6 @@
 
 - (void)renBtnClick:(UIButton *)sender{
     _centerView.topText =@"sqz宋清正sqz\n测试文字\n(15s)";
-    _centerView.centerText =@"不使用";
 }
 
 - (void)keywordsButtonClick:(UIButton*)button {

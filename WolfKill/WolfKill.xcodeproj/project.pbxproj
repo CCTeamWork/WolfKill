@@ -116,6 +116,7 @@
 		F02E41AD1E8B8C7C00E80017 /* MSULeftCharactorView.m in Sources */ = {isa = PBXBuildFile; fileRef = F02E41AC1E8B8C7C00E80017 /* MSULeftCharactorView.m */; };
 		F02E41B11E8B8D0100E80017 /* MSURightCharactorView.m in Sources */ = {isa = PBXBuildFile; fileRef = F02E41B01E8B8D0100E80017 /* MSURightCharactorView.m */; };
 		F02E41B41E8B8D1200E80017 /* MSUBottomCharactorView.m in Sources */ = {isa = PBXBuildFile; fileRef = F02E41B31E8B8D1200E80017 /* MSUBottomCharactorView.m */; };
+		F03C86041E8BAF1B003B0F96 /* MSUWitchView.m in Sources */ = {isa = PBXBuildFile; fileRef = F03C86031E8BAF1B003B0F96 /* MSUWitchView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -267,6 +268,8 @@
 		F02E41B01E8B8D0100E80017 /* MSURightCharactorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSURightCharactorView.m; sourceTree = "<group>"; };
 		F02E41B21E8B8D1200E80017 /* MSUBottomCharactorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSUBottomCharactorView.h; sourceTree = "<group>"; };
 		F02E41B31E8B8D1200E80017 /* MSUBottomCharactorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSUBottomCharactorView.m; sourceTree = "<group>"; };
+		F03C86021E8BAF1B003B0F96 /* MSUWitchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSUWitchView.h; sourceTree = "<group>"; };
+		F03C86031E8BAF1B003B0F96 /* MSUWitchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSUWitchView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -551,6 +554,8 @@
 			isa = PBXGroup;
 			children = (
 				F02E41AE1E8B8CAE00E80017 /* CharactorView */,
+				F03C86021E8BAF1B003B0F96 /* MSUWitchView.h */,
+				F03C86031E8BAF1B003B0F96 /* MSUWitchView.m */,
 				F02729A81E8A3B8A00823F53 /* MSUNavgitionView.h */,
 				F02729A91E8A3B8A00823F53 /* MSUNavgitionView.m */,
 				D74D7F651E8A491600533A99 /* AlertBgView.h */,
@@ -861,6 +866,7 @@
 				F02729A71E8A3B5800823F53 /* MSUMainController.m in Sources */,
 				F02729AA1E8A3B8A00823F53 /* MSUNavgitionView.m in Sources */,
 				F02728161E8A31E000823F53 /* AppDelegate.m in Sources */,
+				F03C86041E8BAF1B003B0F96 /* MSUWitchView.m in Sources */,
 				F02728131E8A31E000823F53 /* main.m in Sources */,
 				D74D7F671E8A491600533A99 /* AlertBgView.m in Sources */,
 				D74D7F7B1E8A6F1B00533A99 /* MessageCell.m in Sources */,
