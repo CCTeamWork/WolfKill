@@ -126,6 +126,7 @@
 		F05025E71E8BE29E002DFBEB /* MSUPoliceView.m in Sources */ = {isa = PBXBuildFile; fileRef = F05025E61E8BE29E002DFBEB /* MSUPoliceView.m */; };
 		F066C3721E8BE8CC00151CB0 /* NSString+ChangeString.m in Sources */ = {isa = PBXBuildFile; fileRef = F066C3711E8BE8CC00151CB0 /* NSString+ChangeString.m */; };
 		F066C3761E8BF4DB00151CB0 /* MSUPoliceOrWitchView.m in Sources */ = {isa = PBXBuildFile; fileRef = F066C3751E8BF4DB00151CB0 /* MSUPoliceOrWitchView.m */; };
+		F0D93C7A1E8CB0C600726274 /* gouSel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F0D93C791E8CB0C600726274 /* gouSel@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -294,6 +295,7 @@
 		F066C3711E8BE8CC00151CB0 /* NSString+ChangeString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ChangeString.m"; sourceTree = "<group>"; };
 		F066C3741E8BF4DB00151CB0 /* MSUPoliceOrWitchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSUPoliceOrWitchView.h; sourceTree = "<group>"; };
 		F066C3751E8BF4DB00151CB0 /* MSUPoliceOrWitchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSUPoliceOrWitchView.m; sourceTree = "<group>"; };
+		F0D93C791E8CB0C600726274 /* gouSel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gouSel@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -475,6 +477,7 @@
 		F02728F81E8A359900823F53 /* 按钮资源 */ = {
 			isa = PBXGroup;
 			children = (
+				F0D93C791E8CB0C600726274 /* gouSel@2x.png */,
 				F02728F91E8A359900823F53 /* a4_2x.png */,
 				F02728FA1E8A359900823F53 /* anniu_2x.png */,
 				F02728FB1E8A359900823F53 /* anzhushuohuaquan_2x.png */,
@@ -802,6 +805,7 @@
 				F027297A1E8A359900823F53 /* moxing_3_2x.png in Resources */,
 				F02729631E8A359900823F53 /* ic_launcher.png in Resources */,
 				F02729601E8A359900823F53 /* haorenzhengyin.png in Resources */,
+				F0D93C7A1E8CB0C600726274 /* gouSel@2x.png in Resources */,
 				F02729861E8A359900823F53 /* shifoushezhimima.png in Resources */,
 				F027295A1E8A359900823F53 /* fanhui.PNG in Resources */,
 				F02729841E8A359900823F53 /* renwu.png in Resources */,
@@ -916,10 +920,8 @@
 				F02729A71E8A3B5800823F53 /* MSUMainController.m in Sources */,
 				F02729AA1E8A3B8A00823F53 /* MSUNavgitionView.m in Sources */,
 				F02728161E8A31E000823F53 /* AppDelegate.m in Sources */,
-
 				D72D57271E8BE22800B38425 /* ButtonView.m in Sources */,
 				D72D56B01E8B8C7700B38425 /* SelectFriendView.m in Sources */,
-
 				F03C86041E8BAF1B003B0F96 /* MSUWitchView.m in Sources */,
 				F066C3721E8BE8CC00151CB0 /* NSString+ChangeString.m in Sources */,
 				F02728131E8A31E000823F53 /* main.m in Sources */,
@@ -929,7 +931,6 @@
 				F02E41AD1E8B8C7C00E80017 /* MSULeftCharactorView.m in Sources */,
 				D74D7F7F1E8A892500533A99 /* CampView.m in Sources */,
 				D72D56B61E8B8FB200B38425 /* FriendsCell.m in Sources */,
-
 				F02729B01E8A68BA00823F53 /* MSUAlertDetailView.m in Sources */,
 				D74D7F6C1E8A509900533A99 /* MainCenterView.m in Sources */,
 				F02E41B41E8B8D1200E80017 /* MSUBottomCharactorView.m in Sources */,
