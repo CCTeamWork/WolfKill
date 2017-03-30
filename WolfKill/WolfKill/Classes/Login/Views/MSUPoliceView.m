@@ -32,6 +32,7 @@
     //警徽标识
     CGFloat policeWid = 100;
     UIImageView *policIma = [[UIImageView alloc] init];
+    policIma.contentMode =UIViewContentModeScaleAspectFit;
     policIma.image = [UIImage imageNamed:@"jinghui"];
     [self addSubview:policIma];
     [policIma makeConstraints:^(MASConstraintMaker *make) {

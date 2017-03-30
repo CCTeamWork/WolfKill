@@ -17,7 +17,6 @@
 //左侧身份星标图片
 @property (nonatomic , strong) UIImageView *identiIma;
 
-
 //房主识别图片
 @property (nonatomic , strong) UIImageView *roomOwnerIma;
 //准备标识

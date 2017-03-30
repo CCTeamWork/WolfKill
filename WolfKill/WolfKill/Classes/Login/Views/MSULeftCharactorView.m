@@ -38,6 +38,7 @@
     
     //人物识别-左侧 图片
     self.identiIma = [[UIImageView alloc] init];
+    self.identiIma.contentMode =UIViewContentModeScaleAspectFit;
     [self addSubview:_identiIma];
     _identiIma.image = [UIImage imageNamed:@"huangsexingxing"];
     [_identiIma makeConstraints:^(MASConstraintMaker *make) {
@@ -49,6 +50,7 @@
     
     //房主图标
     self.roomOwnerIma = [[UIImageView alloc] init];
+    self.roomOwnerIma.contentMode =UIViewContentModeScaleAspectFit;
     [self addSubview:_roomOwnerIma];
     _roomOwnerIma.image = [UIImage imageNamed:@"fangzhu"];
     [_roomOwnerIma makeConstraints:^(MASConstraintMaker *make) {
@@ -60,6 +62,7 @@
     
     //准备图标
     self.prepareIma = [[UIImageView alloc] init];
+    self.prepareIma.contentMode =UIViewContentModeScaleAspectFit;
     [self addSubview:_prepareIma];
     _prepareIma.image = [UIImage imageNamed:@"zhunbei"];
     [_prepareIma makeConstraints:^(MASConstraintMaker *make) {
@@ -71,6 +74,7 @@
     
     //死亡标识
     self.deathIma = [[UIImageView alloc] init];
+    self.deathIma.contentMode =UIViewContentModeScaleAspectFit;
     [self addSubview:_deathIma];
     _deathIma.image = [UIImage imageNamed:@"siwang"];
     [_deathIma makeConstraints:^(MASConstraintMaker *make) {
@@ -82,6 +86,7 @@
     
     //警察身份图标
     self.policeIma = [[UIImageView alloc] init];
+    self.policeIma.contentMode =UIViewContentModeScaleAspectFit;
     [self addSubview:_policeIma];
     _policeIma.image = [UIImage imageNamed:@"tubiao"];
     [_policeIma makeConstraints:^(MASConstraintMaker *make) {
@@ -93,6 +98,7 @@
     
     //狼人身份标识
     self.wolfIma = [[UIImageView alloc] init];
+    self.wolfIma.contentMode =UIViewContentModeScaleAspectFit;
     [self addSubview:_wolfIma];
     _wolfIma.image = [UIImage imageNamed:@"xiaolang"];
     [_wolfIma makeConstraints:^(MASConstraintMaker *make) {
@@ -104,6 +110,7 @@
     
     //丘比特身份标识
     self.cupidIma = [[UIImageView alloc] init];
+    self.cupidIma.contentMode =UIViewContentModeScaleAspectFit;
     [self insertSubview:_cupidIma belowSubview:_charactBtn];
     _cupidIma.image = [UIImage imageNamed:@"jian"];
     [_cupidIma makeConstraints:^(MASConstraintMaker *make) {
@@ -132,6 +139,7 @@
     
     //语音标识
     self.audioIma = [[UIImageView alloc] init];
+    self.audioIma.contentMode =UIViewContentModeScaleAspectFit;
     [self addSubview:_audioIma];
     _audioIma.image = [UIImage imageNamed:@"yuyin"];
     [_audioIma makeConstraints:^(MASConstraintMaker *make) {
@@ -158,7 +166,6 @@
         make.width.equalTo(30);
         make.height.equalTo(20);
     }];
-
 }
 
 @end
