@@ -66,7 +66,7 @@
     _prepareIma.image = [UIImage imageNamed:@"zhunbei"];
     [_prepareIma makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(_charactBtn.top).offset(35);
-        make.centerX.equalTo(_charactBtn.centerX);
+        make.center.equalTo(_charactBtn.center).offset(0);
         make.width.equalTo(35);
         make.height.equalTo(leftSpace);
     }];
@@ -77,7 +77,7 @@
     _deathIma.image = [UIImage imageNamed:@"siwang"];
     [_deathIma makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(_charactBtn.top).offset(35);
-        make.centerX.equalTo(_charactBtn.centerX);
+        make.center.equalTo(_charactBtn.center).offset(0);
         make.width.equalTo(35);
         make.height.equalTo(leftSpace);
     }];
@@ -88,7 +88,7 @@
     _policeIma.image = [UIImage imageNamed:@"tubiao"];
     [_policeIma makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(_charactBtn.top).offset(0);
-        make.centerX.equalTo(_charactBtn.centerX);
+        make.center.equalTo(_charactBtn.center).offset(0);
         make.width.equalTo(characWidth);
         make.height.equalTo(leftSpace);
     }];
@@ -99,7 +99,7 @@
     _wolfIma.image = [UIImage imageNamed:@"xiaolang"];
     [_wolfIma makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(_charactBtn.top).offset(20);
-        make.centerX.equalTo(_charactBtn.centerX).offset(-25);
+        make.center.equalTo(_charactBtn.center).offset(-25);
         make.width.equalTo(leftSpace);
         make.height.equalTo(leftSpace);
     }];
@@ -110,7 +110,7 @@
     _cupidIma.image = [UIImage imageNamed:@"jian"];
     [_cupidIma makeConstraints:^(MASConstraintMaker *make) {
         make.bottom.equalTo(_charactBtn.bottom).offset(0);
-        make.centerX.equalTo(_charactBtn.centerX).offset(0);
+        make.center.equalTo(_charactBtn.center).offset(0);
         make.width.equalTo(characWidth + 15);
         make.height.equalTo(characHeight - 25);
     }];
