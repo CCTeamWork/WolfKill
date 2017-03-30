@@ -29,6 +29,8 @@
 #define bottomSpace ((WIDTH - 40) - (5 * characWidth))/4
 #define leftSpace 20
 #define rightSpace 20
+#define topSpace 20
+#define identiWidth 20
 
 //定义颜色
 #define WHITECOLOR [UIColor whiteColor]
