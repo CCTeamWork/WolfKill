@@ -176,6 +176,8 @@
 
 /*====================================遍历取帽==================================================*/
 
+    /*
+    
     for (NSInteger index = 0; index < _policeArr.count; index++) {
         UIImageView *ima = _policeArr[index];
         ima.hidden = YES;
@@ -211,6 +213,8 @@
         ima.hidden = YES;
     }
     
+     */
+     
 //    for (NSInteger index = 0; index < _audioArr.count; index++) {
 //        UIImageView *ima = _audioArr[index];
 //        ima.hidden = YES;

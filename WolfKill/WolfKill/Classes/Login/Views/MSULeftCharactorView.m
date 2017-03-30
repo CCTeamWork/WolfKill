@@ -27,11 +27,12 @@
     self.charactBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [_charactBtn setImage:[UIImage imageNamed:@"moxing_2"] forState:UIControlStateNormal];
     _charactBtn.backgroundColor = [UIColor clearColor];
+    _charactBtn.contentMode =UIViewContentModeScaleAspectFit;
     _charactBtn.adjustsImageWhenHighlighted = NO;
     [self addSubview:_charactBtn];
     [_charactBtn makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.top).offset(0);
-        make.left.equalTo(self.left).offset(20);
+        make.left.equalTo(self.left).offset(identiWidth);
         make.width.equalTo(characWidth);
         make.height.equalTo(characHeight);
     }];
@@ -44,8 +45,8 @@
     [_identiIma makeConstraints:^(MASConstraintMaker *make) {
         make.bottom.equalTo(_charactBtn.bottom).offset(0);
         make.left.equalTo(_charactBtn.right).offset(-10);
-        make.width.equalTo(20);
-        make.height.equalTo(20);
+        make.width.equalTo(identiWidth);
+        make.height.equalTo(identiWidth);
     }];
     
     //房主图标
@@ -56,8 +57,8 @@
     [_roomOwnerIma makeConstraints:^(MASConstraintMaker *make) {
         make.bottom.equalTo(_identiIma.bottom).offset(0);
         make.right.equalTo(_charactBtn.left).offset(10);
-        make.width.equalTo(20);
-        make.height.equalTo(20);
+        make.width.equalTo(identiWidth);
+        make.height.equalTo(identiWidth);
     }];
     
     //准备图标
@@ -67,9 +68,9 @@
     _prepareIma.image = [UIImage imageNamed:@"zhunbei"];
     [_prepareIma makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(_charactBtn.top).offset(35);
-        make.center.equalTo(_charactBtn.center).offset(0);
-        make.width.equalTo(35);
-        make.height.equalTo(leftSpace);
+        make.left.equalTo(_charactBtn.left).offset(0);
+        make.width.equalTo(characWidth);
+        make.height.equalTo(identiWidth);
     }];
     
     //死亡标识
@@ -79,9 +80,9 @@
     _deathIma.image = [UIImage imageNamed:@"siwang"];
     [_deathIma makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(_charactBtn.top).offset(35);
-        make.center.equalTo(_charactBtn.center).offset(0);
-        make.width.equalTo(35);
-        make.height.equalTo(leftSpace);
+        make.left.equalTo(_charactBtn.left).offset(0);
+        make.width.equalTo(characWidth);
+        make.height.equalTo(identiWidth);
     }];
     
     //警察身份图标
@@ -91,9 +92,9 @@
     _policeIma.image = [UIImage imageNamed:@"tubiao"];
     [_policeIma makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(_charactBtn.top).offset(0);
-        make.center.equalTo(_charactBtn.center).offset(0);
+        make.left.equalTo(_charactBtn.left).offset(0);
         make.width.equalTo(characWidth);
-        make.height.equalTo(leftSpace);
+        make.height.equalTo(identiWidth);
     }];
     
     //狼人身份标识
@@ -102,8 +103,8 @@
     [self addSubview:_wolfIma];
     _wolfIma.image = [UIImage imageNamed:@"xiaolang"];
     [_wolfIma makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(_charactBtn.top).offset(20);
-        make.center.equalTo(_charactBtn.center).offset(-25);
+        make.top.equalTo(_charactBtn.top).offset(topSpace);
+        make.left.equalTo(_charactBtn.left).offset(-leftSpace);
         make.width.equalTo(leftSpace);
         make.height.equalTo(leftSpace);
     }];
@@ -115,8 +116,8 @@
     _cupidIma.image = [UIImage imageNamed:@"jian"];
     [_cupidIma makeConstraints:^(MASConstraintMaker *make) {
         make.bottom.equalTo(_charactBtn.bottom).offset(0);
-        make.center.equalTo(_charactBtn.center).offset(0);
-        make.width.equalTo(characWidth + 15);
+        make.left.equalTo(_charactBtn.left).offset(-10);
+        make.width.equalTo(characWidth + 25);
         make.height.equalTo(characHeight - 25);
     }];
     

@@ -438,6 +438,7 @@
 				TargetAttributes = {
 					F027280D1E8A31E000823F53 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = J5C6HPKH8U;
 						ProvisioningStyle = Automatic;
 					};
 					F02728261E8A31E000823F53 = {
@@ -730,7 +731,9 @@
 			baseConfigurationReference = ED9105A806159BA55BD1BA1A /* Pods-WolfKill.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = J5C6HPKH8U;
 				INFOPLIST_FILE = WolfKill/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Mn-Su.WolfKill";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -742,7 +745,9 @@
 			baseConfigurationReference = B10732A07A75E62BFAC0A0B4 /* Pods-WolfKill.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = J5C6HPKH8U;
 				INFOPLIST_FILE = WolfKill/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Mn-Su.WolfKill";
 				PRODUCT_NAME = "$(TARGET_NAME)";
