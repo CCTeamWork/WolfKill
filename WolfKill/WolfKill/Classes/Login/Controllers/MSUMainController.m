@@ -44,9 +44,6 @@
 
     self.view.backgroundColor = BGCOLOR;
     
- 
-
-    
     [self createNavi];
     [self createCharactorRoom];
     // 中间视图
@@ -60,15 +57,9 @@
         make.right.equalTo(self.view.right).offset(-100);
         make.bottom.equalTo(self.view.bottom).offset(100);
     }];
-    
-    AlertBgView *alert =[[AlertBgView alloc]initWithFrame:CGRectMake(0, 0, WIDTH, HEIGHT)];
-    alert.clickRemove =NO;
-    alert.bgColor =[UIColor colorWithWhite:0 alpha:0.8];
-    [alert showView];
 
     _centerView.centerText =@"";
     
-
     MSUPoliceOrWitchView *chooseView = [[MSUPoliceOrWitchView alloc] initWithFrame:CGRectMake(40, HEIGHT*0.5 - 120, WIDTH-80, 150) isPolice:NO];
     chooseView.backgroundColor = [UIColor clearColor];
     [self.view addSubview:chooseView];
@@ -94,11 +85,10 @@
     [_msuAlertView.sureOrCancelBtn addTarget:self action:@selector(sureOrCancelBtnClick:) forControlEvents:UIControlEventTouchUpInside];
     
     _centerView.topText =@"宋清正\n测试文字\n(0s)";
-    _centerView.centerText =@"是否使用毒药,是都使用毒药?";
+    _centerView.centerText =@"是否使用毒药?";
 }
 
 - (void)gouBtnClick:(UIButton *)sender{
-    
     
 }
 
