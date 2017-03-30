@@ -23,6 +23,9 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     
+    if (_topLabel.text.length ==0) {
+        _topLabel.superview.hidden =YES;
+    }
     _tableView.estimatedRowHeight =UITableViewAutomaticDimension;
     _tableView.separatorStyle =UITableViewCellSeparatorStyleNone;
     _tableView.delegate =self;
@@ -64,7 +67,7 @@
     [_tableView reloadData];
     [self.tableView setContentOffset:CGPointMake(0, self.tableView.contentSize.height -self.tableView.bounds.size.height) animated:YES];
 }
-// 单挑消息
+// 单条消息
 - (void)setMessage:(NSString *)message {
     if (message.length ==0) {
         return;
