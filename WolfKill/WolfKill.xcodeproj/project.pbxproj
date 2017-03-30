@@ -25,6 +25,13 @@
 		D74D7F7C1E8A6F1B00533A99 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D74D7F7A1E8A6F1B00533A99 /* MessageCell.xib */; };
 		D74D7F7F1E8A892500533A99 /* CampView.m in Sources */ = {isa = PBXBuildFile; fileRef = D74D7F7E1E8A892500533A99 /* CampView.m */; };
 		D74D7F811E8A893500533A99 /* CampView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D74D7F801E8A893500533A99 /* CampView.xib */; };
+		F01B332E1E8D25AC008642E6 /* MSUBottomCharactorView.m in Sources */ = {isa = PBXBuildFile; fileRef = F01B33271E8D25AC008642E6 /* MSUBottomCharactorView.m */; };
+		F01B332F1E8D25AC008642E6 /* MSUCharactorView.m in Sources */ = {isa = PBXBuildFile; fileRef = F01B33291E8D25AC008642E6 /* MSUCharactorView.m */; };
+		F01B33301E8D25AC008642E6 /* MSULeftCharactorView.m in Sources */ = {isa = PBXBuildFile; fileRef = F01B332B1E8D25AC008642E6 /* MSULeftCharactorView.m */; };
+		F01B33311E8D25AC008642E6 /* MSURightCharactorView.m in Sources */ = {isa = PBXBuildFile; fileRef = F01B332D1E8D25AC008642E6 /* MSURightCharactorView.m */; };
+		F01B33391E8D25B8008642E6 /* MSUPoliceOrWitchView.m in Sources */ = {isa = PBXBuildFile; fileRef = F01B33341E8D25B8008642E6 /* MSUPoliceOrWitchView.m */; };
+		F01B333A1E8D25B8008642E6 /* MSUPoliceView.m in Sources */ = {isa = PBXBuildFile; fileRef = F01B33361E8D25B8008642E6 /* MSUPoliceView.m */; };
+		F01B333B1E8D25B8008642E6 /* MSUWitchView.m in Sources */ = {isa = PBXBuildFile; fileRef = F01B33381E8D25B8008642E6 /* MSUWitchView.m */; };
 		F02728131E8A31E000823F53 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F02728121E8A31E000823F53 /* main.m */; };
 		F02728161E8A31E000823F53 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F02728151E8A31E000823F53 /* AppDelegate.m */; };
 		F027281C1E8A31E000823F53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F027281A1E8A31E000823F53 /* Main.storyboard */; };
@@ -33,15 +40,8 @@
 		F02728371E8A31E000823F53 /* WolfKillUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F02728361E8A31E000823F53 /* WolfKillUITests.m */; };
 		F02729A71E8A3B5800823F53 /* MSUMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = F02729A31E8A3B5800823F53 /* MSUMainController.m */; };
 		F02729AA1E8A3B8A00823F53 /* MSUNavgitionView.m in Sources */ = {isa = PBXBuildFile; fileRef = F02729A91E8A3B8A00823F53 /* MSUNavgitionView.m */; };
-		F02729AD1E8A438200823F53 /* MSUCharactorView.m in Sources */ = {isa = PBXBuildFile; fileRef = F02729AC1E8A438200823F53 /* MSUCharactorView.m */; };
 		F02729B01E8A68BA00823F53 /* MSUAlertDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = F02729AF1E8A68BA00823F53 /* MSUAlertDetailView.m */; };
-		F02E41AD1E8B8C7C00E80017 /* MSULeftCharactorView.m in Sources */ = {isa = PBXBuildFile; fileRef = F02E41AC1E8B8C7C00E80017 /* MSULeftCharactorView.m */; };
-		F02E41B11E8B8D0100E80017 /* MSURightCharactorView.m in Sources */ = {isa = PBXBuildFile; fileRef = F02E41B01E8B8D0100E80017 /* MSURightCharactorView.m */; };
-		F02E41B41E8B8D1200E80017 /* MSUBottomCharactorView.m in Sources */ = {isa = PBXBuildFile; fileRef = F02E41B31E8B8D1200E80017 /* MSUBottomCharactorView.m */; };
-		F03C86041E8BAF1B003B0F96 /* MSUWitchView.m in Sources */ = {isa = PBXBuildFile; fileRef = F03C86031E8BAF1B003B0F96 /* MSUWitchView.m */; };
-		F05025E71E8BE29E002DFBEB /* MSUPoliceView.m in Sources */ = {isa = PBXBuildFile; fileRef = F05025E61E8BE29E002DFBEB /* MSUPoliceView.m */; };
 		F066C3721E8BE8CC00151CB0 /* NSString+ChangeString.m in Sources */ = {isa = PBXBuildFile; fileRef = F066C3711E8BE8CC00151CB0 /* NSString+ChangeString.m */; };
-		F066C3761E8BF4DB00151CB0 /* MSUPoliceOrWitchView.m in Sources */ = {isa = PBXBuildFile; fileRef = F066C3751E8BF4DB00151CB0 /* MSUPoliceOrWitchView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +89,20 @@
 		D74D7F7E1E8A892500533A99 /* CampView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CampView.m; sourceTree = "<group>"; };
 		D74D7F801E8A893500533A99 /* CampView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CampView.xib; sourceTree = "<group>"; };
 		ED9105A806159BA55BD1BA1A /* Pods-WolfKill.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WolfKill.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WolfKill/Pods-WolfKill.debug.xcconfig"; sourceTree = "<group>"; };
+		F01B33261E8D25AC008642E6 /* MSUBottomCharactorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSUBottomCharactorView.h; sourceTree = "<group>"; };
+		F01B33271E8D25AC008642E6 /* MSUBottomCharactorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSUBottomCharactorView.m; sourceTree = "<group>"; };
+		F01B33281E8D25AC008642E6 /* MSUCharactorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSUCharactorView.h; sourceTree = "<group>"; };
+		F01B33291E8D25AC008642E6 /* MSUCharactorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSUCharactorView.m; sourceTree = "<group>"; };
+		F01B332A1E8D25AC008642E6 /* MSULeftCharactorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSULeftCharactorView.h; sourceTree = "<group>"; };
+		F01B332B1E8D25AC008642E6 /* MSULeftCharactorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSULeftCharactorView.m; sourceTree = "<group>"; };
+		F01B332C1E8D25AC008642E6 /* MSURightCharactorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSURightCharactorView.h; sourceTree = "<group>"; };
+		F01B332D1E8D25AC008642E6 /* MSURightCharactorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSURightCharactorView.m; sourceTree = "<group>"; };
+		F01B33331E8D25B8008642E6 /* MSUPoliceOrWitchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSUPoliceOrWitchView.h; sourceTree = "<group>"; };
+		F01B33341E8D25B8008642E6 /* MSUPoliceOrWitchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSUPoliceOrWitchView.m; sourceTree = "<group>"; };
+		F01B33351E8D25B8008642E6 /* MSUPoliceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSUPoliceView.h; sourceTree = "<group>"; };
+		F01B33361E8D25B8008642E6 /* MSUPoliceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSUPoliceView.m; sourceTree = "<group>"; };
+		F01B33371E8D25B8008642E6 /* MSUWitchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSUWitchView.h; sourceTree = "<group>"; };
+		F01B33381E8D25B8008642E6 /* MSUWitchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSUWitchView.m; sourceTree = "<group>"; };
 		F027280E1E8A31E000823F53 /* WolfKill.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WolfKill.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F02728121E8A31E000823F53 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F02728141E8A31E000823F53 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -108,24 +122,10 @@
 		F02729A31E8A3B5800823F53 /* MSUMainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSUMainController.m; sourceTree = "<group>"; };
 		F02729A81E8A3B8A00823F53 /* MSUNavgitionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSUNavgitionView.h; sourceTree = "<group>"; };
 		F02729A91E8A3B8A00823F53 /* MSUNavgitionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSUNavgitionView.m; sourceTree = "<group>"; };
-		F02729AB1E8A438200823F53 /* MSUCharactorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSUCharactorView.h; path = ../MSUCharactorView.h; sourceTree = "<group>"; };
-		F02729AC1E8A438200823F53 /* MSUCharactorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSUCharactorView.m; path = ../MSUCharactorView.m; sourceTree = "<group>"; };
 		F02729AE1E8A68BA00823F53 /* MSUAlertDetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSUAlertDetailView.h; sourceTree = "<group>"; };
 		F02729AF1E8A68BA00823F53 /* MSUAlertDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSUAlertDetailView.m; sourceTree = "<group>"; };
-		F02E41AB1E8B8C7C00E80017 /* MSULeftCharactorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSULeftCharactorView.h; path = ../MSULeftCharactorView.h; sourceTree = "<group>"; };
-		F02E41AC1E8B8C7C00E80017 /* MSULeftCharactorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSULeftCharactorView.m; path = ../MSULeftCharactorView.m; sourceTree = "<group>"; };
-		F02E41AF1E8B8D0100E80017 /* MSURightCharactorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSURightCharactorView.h; sourceTree = "<group>"; };
-		F02E41B01E8B8D0100E80017 /* MSURightCharactorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSURightCharactorView.m; sourceTree = "<group>"; };
-		F02E41B21E8B8D1200E80017 /* MSUBottomCharactorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSUBottomCharactorView.h; sourceTree = "<group>"; };
-		F02E41B31E8B8D1200E80017 /* MSUBottomCharactorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSUBottomCharactorView.m; sourceTree = "<group>"; };
-		F03C86021E8BAF1B003B0F96 /* MSUWitchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSUWitchView.h; path = ../MSUWitchView.h; sourceTree = "<group>"; };
-		F03C86031E8BAF1B003B0F96 /* MSUWitchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSUWitchView.m; path = ../MSUWitchView.m; sourceTree = "<group>"; };
-		F05025E51E8BE29E002DFBEB /* MSUPoliceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSUPoliceView.h; path = ../MSUPoliceView.h; sourceTree = "<group>"; };
-		F05025E61E8BE29E002DFBEB /* MSUPoliceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSUPoliceView.m; path = ../MSUPoliceView.m; sourceTree = "<group>"; };
 		F066C3701E8BE8CC00151CB0 /* NSString+ChangeString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ChangeString.h"; sourceTree = "<group>"; };
 		F066C3711E8BE8CC00151CB0 /* NSString+ChangeString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ChangeString.m"; sourceTree = "<group>"; };
-		F066C3741E8BF4DB00151CB0 /* MSUPoliceOrWitchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSUPoliceOrWitchView.h; sourceTree = "<group>"; };
-		F066C3751E8BF4DB00151CB0 /* MSUPoliceOrWitchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSUPoliceOrWitchView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +190,34 @@
 				D72D56B51E8B8FB200B38425 /* FriendsCell.xib */,
 			);
 			path = SubView;
+			sourceTree = "<group>";
+		};
+		F01B33251E8D25AC008642E6 /* CharactorView */ = {
+			isa = PBXGroup;
+			children = (
+				F01B33261E8D25AC008642E6 /* MSUBottomCharactorView.h */,
+				F01B33271E8D25AC008642E6 /* MSUBottomCharactorView.m */,
+				F01B33281E8D25AC008642E6 /* MSUCharactorView.h */,
+				F01B33291E8D25AC008642E6 /* MSUCharactorView.m */,
+				F01B332A1E8D25AC008642E6 /* MSULeftCharactorView.h */,
+				F01B332B1E8D25AC008642E6 /* MSULeftCharactorView.m */,
+				F01B332C1E8D25AC008642E6 /* MSURightCharactorView.h */,
+				F01B332D1E8D25AC008642E6 /* MSURightCharactorView.m */,
+			);
+			path = CharactorView;
+			sourceTree = "<group>";
+		};
+		F01B33321E8D25B8008642E6 /* PoliceOrWitch */ = {
+			isa = PBXGroup;
+			children = (
+				F01B33331E8D25B8008642E6 /* MSUPoliceOrWitchView.h */,
+				F01B33341E8D25B8008642E6 /* MSUPoliceOrWitchView.m */,
+				F01B33351E8D25B8008642E6 /* MSUPoliceView.h */,
+				F01B33361E8D25B8008642E6 /* MSUPoliceView.m */,
+				F01B33371E8D25B8008642E6 /* MSUWitchView.h */,
+				F01B33381E8D25B8008642E6 /* MSUWitchView.m */,
+			);
+			path = PoliceOrWitch;
 			sourceTree = "<group>";
 		};
 		F02728051E8A31E000823F53 = {
@@ -314,8 +342,8 @@
 		F02729A61E8A3B5800823F53 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				F066C3731E8BF4BD00151CB0 /* PoliceOrWitch */,
-				F02E41AE1E8B8CAE00E80017 /* CharactorView */,
+				F01B33321E8D25B8008642E6 /* PoliceOrWitch */,
+				F01B33251E8D25AC008642E6 /* CharactorView */,
 				F02729A81E8A3B8A00823F53 /* MSUNavgitionView.h */,
 				F02729A91E8A3B8A00823F53 /* MSUNavgitionView.m */,
 				D74D7F651E8A491600533A99 /* AlertBgView.h */,
@@ -338,34 +366,6 @@
 				D74D7F771E8A6EF900533A99 /* SubView */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		F02E41AE1E8B8CAE00E80017 /* CharactorView */ = {
-			isa = PBXGroup;
-			children = (
-				F02729AB1E8A438200823F53 /* MSUCharactorView.h */,
-				F02729AC1E8A438200823F53 /* MSUCharactorView.m */,
-				F02E41AB1E8B8C7C00E80017 /* MSULeftCharactorView.h */,
-				F02E41AC1E8B8C7C00E80017 /* MSULeftCharactorView.m */,
-				F02E41AF1E8B8D0100E80017 /* MSURightCharactorView.h */,
-				F02E41B01E8B8D0100E80017 /* MSURightCharactorView.m */,
-				F02E41B21E8B8D1200E80017 /* MSUBottomCharactorView.h */,
-				F02E41B31E8B8D1200E80017 /* MSUBottomCharactorView.m */,
-			);
-			path = CharactorView;
-			sourceTree = "<group>";
-		};
-		F066C3731E8BF4BD00151CB0 /* PoliceOrWitch */ = {
-			isa = PBXGroup;
-			children = (
-				F03C86021E8BAF1B003B0F96 /* MSUWitchView.h */,
-				F03C86031E8BAF1B003B0F96 /* MSUWitchView.m */,
-				F05025E51E8BE29E002DFBEB /* MSUPoliceView.h */,
-				F05025E61E8BE29E002DFBEB /* MSUPoliceView.m */,
-				F066C3741E8BF4DB00151CB0 /* MSUPoliceOrWitchView.h */,
-				F066C3751E8BF4DB00151CB0 /* MSUPoliceOrWitchView.m */,
-			);
-			path = PoliceOrWitch;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -564,24 +564,24 @@
 				D74D7F761E8A56A500533A99 /* UIView+Convenience.m in Sources */,
 				F02729A71E8A3B5800823F53 /* MSUMainController.m in Sources */,
 				F02729AA1E8A3B8A00823F53 /* MSUNavgitionView.m in Sources */,
+				F01B33391E8D25B8008642E6 /* MSUPoliceOrWitchView.m in Sources */,
 				F02728161E8A31E000823F53 /* AppDelegate.m in Sources */,
 				D72D57271E8BE22800B38425 /* ButtonView.m in Sources */,
 				D72D56B01E8B8C7700B38425 /* SelectFriendView.m in Sources */,
-				F03C86041E8BAF1B003B0F96 /* MSUWitchView.m in Sources */,
 				F066C3721E8BE8CC00151CB0 /* NSString+ChangeString.m in Sources */,
 				F02728131E8A31E000823F53 /* main.m in Sources */,
-				F05025E71E8BE29E002DFBEB /* MSUPoliceView.m in Sources */,
 				D74D7F671E8A491600533A99 /* AlertBgView.m in Sources */,
+				F01B33301E8D25AC008642E6 /* MSULeftCharactorView.m in Sources */,
 				D74D7F7B1E8A6F1B00533A99 /* MessageCell.m in Sources */,
-				F02E41AD1E8B8C7C00E80017 /* MSULeftCharactorView.m in Sources */,
 				D74D7F7F1E8A892500533A99 /* CampView.m in Sources */,
+				F01B333B1E8D25B8008642E6 /* MSUWitchView.m in Sources */,
+				F01B332E1E8D25AC008642E6 /* MSUBottomCharactorView.m in Sources */,
 				D72D56B61E8B8FB200B38425 /* FriendsCell.m in Sources */,
 				F02729B01E8A68BA00823F53 /* MSUAlertDetailView.m in Sources */,
 				D74D7F6C1E8A509900533A99 /* MainCenterView.m in Sources */,
-				F02E41B41E8B8D1200E80017 /* MSUBottomCharactorView.m in Sources */,
-				F02E41B11E8B8D0100E80017 /* MSURightCharactorView.m in Sources */,
-				F02729AD1E8A438200823F53 /* MSUCharactorView.m in Sources */,
-				F066C3761E8BF4DB00151CB0 /* MSUPoliceOrWitchView.m in Sources */,
+				F01B33311E8D25AC008642E6 /* MSURightCharactorView.m in Sources */,
+				F01B333A1E8D25B8008642E6 /* MSUPoliceView.m in Sources */,
+				F01B332F1E8D25AC008642E6 /* MSUCharactorView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
