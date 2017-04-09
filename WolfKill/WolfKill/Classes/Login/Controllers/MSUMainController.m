@@ -117,12 +117,16 @@
 }
 
 - (void)keywordsButtonClick:(UIButton*)button {
+    [self gameResultView:@[@""] werewolf:@[@"", @"", @""] civilian:@[@"",@"",@""]];
+}
+
+/// 布局阵营视图
+- (void)gameResultView:(NSMutableArray*)lovers werewolf:(NSMutableArray*)werewolfs civilian:(NSMutableArray*)civilians {
+    
     AlertBgView *alert =[[AlertBgView alloc]initWithFrame:CGRectMake(0, 0, WIDTH, HEIGHT)];
     alert.clickRemove =YES;
     alert.bgColor =[UIColor colorWithWhite:0 alpha:0.8];
     [alert showView];
-    
-    alert.centerView_height.constant =0;
     
     //对阵信息上一部分
     CampView *oneView =[[CampView alloc]initWithFrame:CGRectZero type:CampViewTypeWerewolf];
@@ -145,17 +149,46 @@
         make.right.equalTo(oneView.right).offset(-10);
         make.height.equalTo(35);
     }];
-    //对阵信息上一部分
-    CampView *twoView =[[CampView alloc]initWithFrame:CGRectZero type:CampViewTypeGoodPerson];
-    twoView.typeImageView.image =[UIImage imageNamed:@"win"];
-    [alert.btmView addSubview:twoView];
-
-    [twoView makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(alert.btmView.top);
-        make.left.equalTo(alert.btmView.left).offset(10);
-        make.right.equalTo(alert.btmView.right).offset(-10);
-        make.height.equalTo(150);
-    }];
+    if (lovers.count>0) {
+        alert.centerView_height.constant =170;
+        
+        //对阵信息中间部分
+        CampView *twoView =[[CampView alloc]initWithFrame:CGRectZero type:CampViewTypeGoodPerson];
+        twoView.typeImageView.image =[UIImage imageNamed:@"win"];
+        [alert.centerView addSubview:twoView];
+        
+        [twoView makeConstraints:^(MASConstraintMaker *make) {
+            make.top.equalTo(alert.centerView.top).offset(10);
+            make.left.equalTo(alert.centerView.left).offset(10);
+            make.right.equalTo(alert.centerView.right).offset(-10);
+            make.height.equalTo(150);
+        }];
+        
+        //对阵信息下方部分
+        CampView *threeView =[[CampView alloc]initWithFrame:CGRectZero type:CampViewTypeLover];
+        threeView.typeImageView.image =[UIImage imageNamed:@"lose"];
+        [alert.btmView addSubview:threeView];
+        
+        [threeView makeConstraints:^(MASConstraintMaker *make) {
+            make.top.equalTo(alert.btmView.top).offset(0);
+            make.left.equalTo(alert.btmView.left).offset(10);
+            make.right.equalTo(alert.btmView.right).offset(-10);
+            make.height.equalTo(150);
+        }];
+    } else {
+        alert.centerView_height.constant =0;
+        //对阵信息下方部分
+        CampView *threeView =[[CampView alloc]initWithFrame:CGRectZero type:CampViewTypeGoodPerson];
+        threeView.typeImageView.image =[UIImage imageNamed:@"win"];
+        [alert.btmView addSubview:threeView];
+        
+        [threeView makeConstraints:^(MASConstraintMaker *make) {
+            make.top.equalTo(alert.btmView.top).offset(0);
+            make.left.equalTo(alert.btmView.left).offset(10);
+            make.right.equalTo(alert.btmView.right).offset(-10);
+            make.height.equalTo(150);
+        }];
+    }
 }
 
 //人物形象
