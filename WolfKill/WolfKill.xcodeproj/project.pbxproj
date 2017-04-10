@@ -15,6 +15,8 @@
 		D72D56B81E8B978E00B38425 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F027281D1E8A31E000823F53 /* Assets.xcassets */; };
 		D72D57271E8BE22800B38425 /* ButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = D72D57261E8BE22800B38425 /* ButtonView.m */; };
 		D72D57291E8BE23600B38425 /* ButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D72D57281E8BE23600B38425 /* ButtonView.xib */; };
+		D74417A71E9A3FFA000435B3 /* PlayerInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = D74417A61E9A3FFA000435B3 /* PlayerInfoView.m */; };
+		D74417A91E9A400C000435B3 /* PlayerInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D74417A81E9A400C000435B3 /* PlayerInfoView.xib */; };
 		D74D7F671E8A491600533A99 /* AlertBgView.m in Sources */ = {isa = PBXBuildFile; fileRef = D74D7F661E8A491600533A99 /* AlertBgView.m */; };
 		D74D7F691E8A492700533A99 /* AlertBgView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D74D7F681E8A492700533A99 /* AlertBgView.xib */; };
 		D74D7F6C1E8A509900533A99 /* MainCenterView.m in Sources */ = {isa = PBXBuildFile; fileRef = D74D7F6B1E8A509900533A99 /* MainCenterView.m */; };
@@ -36,8 +38,6 @@
 		F02728161E8A31E000823F53 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F02728151E8A31E000823F53 /* AppDelegate.m */; };
 		F027281C1E8A31E000823F53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F027281A1E8A31E000823F53 /* Main.storyboard */; };
 		F02728211E8A31E000823F53 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F027281F1E8A31E000823F53 /* LaunchScreen.storyboard */; };
-		F027282C1E8A31E000823F53 /* WolfKillTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F027282B1E8A31E000823F53 /* WolfKillTests.m */; };
-		F02728371E8A31E000823F53 /* WolfKillUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F02728361E8A31E000823F53 /* WolfKillUITests.m */; };
 		F02729A71E8A3B5800823F53 /* MSUMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = F02729A31E8A3B5800823F53 /* MSUMainController.m */; };
 		F02729AA1E8A3B8A00823F53 /* MSUNavgitionView.m in Sources */ = {isa = PBXBuildFile; fileRef = F02729A91E8A3B8A00823F53 /* MSUNavgitionView.m */; };
 		F02729B01E8A68BA00823F53 /* MSUAlertDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = F02729AF1E8A68BA00823F53 /* MSUAlertDetailView.m */; };
@@ -73,6 +73,9 @@
 		D72D57251E8BE22800B38425 /* ButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonView.h; sourceTree = "<group>"; };
 		D72D57261E8BE22800B38425 /* ButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonView.m; sourceTree = "<group>"; };
 		D72D57281E8BE23600B38425 /* ButtonView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ButtonView.xib; sourceTree = "<group>"; };
+		D74417A51E9A3FFA000435B3 /* PlayerInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerInfoView.h; sourceTree = "<group>"; };
+		D74417A61E9A3FFA000435B3 /* PlayerInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerInfoView.m; sourceTree = "<group>"; };
+		D74417A81E9A400C000435B3 /* PlayerInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlayerInfoView.xib; sourceTree = "<group>"; };
 		D74D7F651E8A491600533A99 /* AlertBgView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertBgView.h; sourceTree = "<group>"; };
 		D74D7F661E8A491600533A99 /* AlertBgView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertBgView.m; sourceTree = "<group>"; };
 		D74D7F681E8A492700533A99 /* AlertBgView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlertBgView.xib; sourceTree = "<group>"; };
@@ -112,11 +115,7 @@
 		F02728201E8A31E000823F53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F02728221E8A31E000823F53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F02728271E8A31E000823F53 /* WolfKillTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WolfKillTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F027282B1E8A31E000823F53 /* WolfKillTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WolfKillTests.m; sourceTree = "<group>"; };
-		F027282D1E8A31E000823F53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F02728321E8A31E000823F53 /* WolfKillUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WolfKillUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F02728361E8A31E000823F53 /* WolfKillUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WolfKillUITests.m; sourceTree = "<group>"; };
-		F02728381E8A31E000823F53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F027284E1E8A344400823F53 /* MSUHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSUHeader.h; sourceTree = "<group>"; };
 		F02729A21E8A3B5800823F53 /* MSUMainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSUMainController.h; sourceTree = "<group>"; };
 		F02729A31E8A3B5800823F53 /* MSUMainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSUMainController.m; sourceTree = "<group>"; };
@@ -169,6 +168,16 @@
 				A751F22BF325383D344B37B8 /* libPods-WolfKill.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D74417A41E9A3FCA000435B3 /* PlayerInfoView */ = {
+			isa = PBXGroup;
+			children = (
+				D74417A51E9A3FFA000435B3 /* PlayerInfoView.h */,
+				D74417A61E9A3FFA000435B3 /* PlayerInfoView.m */,
+				D74417A81E9A400C000435B3 /* PlayerInfoView.xib */,
+			);
+			path = PlayerInfoView;
 			sourceTree = "<group>";
 		};
 		D74D7F711E8A532400533A99 /* Resurces */ = {
@@ -224,8 +233,6 @@
 			isa = PBXGroup;
 			children = (
 				F02728101E8A31E000823F53 /* WolfKill */,
-				F027282A1E8A31E000823F53 /* WolfKillTests */,
-				F02728351E8A31E000823F53 /* WolfKillUITests */,
 				F027280F1E8A31E000823F53 /* Products */,
 				7F691FF20886CDC467F1DA8D /* Pods */,
 				D36EEE97E1B8F6BAB8FCD7A1 /* Frameworks */,
@@ -263,24 +270,6 @@
 				F02728121E8A31E000823F53 /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		F027282A1E8A31E000823F53 /* WolfKillTests */ = {
-			isa = PBXGroup;
-			children = (
-				F027282B1E8A31E000823F53 /* WolfKillTests.m */,
-				F027282D1E8A31E000823F53 /* Info.plist */,
-			);
-			path = WolfKillTests;
-			sourceTree = "<group>";
-		};
-		F02728351E8A31E000823F53 /* WolfKillUITests */ = {
-			isa = PBXGroup;
-			children = (
-				F02728361E8A31E000823F53 /* WolfKillUITests.m */,
-				F02728381E8A31E000823F53 /* Info.plist */,
-			);
-			path = WolfKillUITests;
 			sourceTree = "<group>";
 		};
 		F02728441E8A326100823F53 /* Classes */ = {
@@ -342,6 +331,7 @@
 		F02729A61E8A3B5800823F53 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D74417A41E9A3FCA000435B3 /* PlayerInfoView */,
 				F01B33321E8D25B8008642E6 /* PoliceOrWitch */,
 				F01B33251E8D25AC008642E6 /* CharactorView */,
 				F02729A81E8A3B8A00823F53 /* MSUNavgitionView.h */,
@@ -481,6 +471,7 @@
 				F02728211E8A31E000823F53 /* LaunchScreen.storyboard in Resources */,
 				D72D56B21E8B8C8C00B38425 /* SelectFriendView.xib in Resources */,
 				D74D7F731E8A532400533A99 /* yan.ttf in Resources */,
+				D74417A91E9A400C000435B3 /* PlayerInfoView.xib in Resources */,
 				D72D56B81E8B978E00B38425 /* Assets.xcassets in Resources */,
 				D72D57291E8BE23600B38425 /* ButtonView.xib in Resources */,
 				D72D56B71E8B8FB200B38425 /* FriendsCell.xib in Resources */,
@@ -562,6 +553,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D74D7F761E8A56A500533A99 /* UIView+Convenience.m in Sources */,
+				D74417A71E9A3FFA000435B3 /* PlayerInfoView.m in Sources */,
 				F02729A71E8A3B5800823F53 /* MSUMainController.m in Sources */,
 				F02729AA1E8A3B8A00823F53 /* MSUNavgitionView.m in Sources */,
 				F01B33391E8D25B8008642E6 /* MSUPoliceOrWitchView.m in Sources */,
@@ -589,7 +581,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F027282C1E8A31E000823F53 /* WolfKillTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -597,7 +588,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F02728371E8A31E000823F53 /* WolfKillUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

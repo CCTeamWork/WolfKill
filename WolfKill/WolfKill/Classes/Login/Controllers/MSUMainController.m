@@ -23,6 +23,8 @@
 // 查看玩家资料
 #import "ButtonView.h"
 
+#import "PlayerInfoView.h"
+
 #import "MSUPoliceOrWitchView.h"
 
 
@@ -114,6 +116,21 @@
 
 - (void)renBtnClick:(UIButton *)sender{
     _centerView.topText =@"sqz宋清正sqz\n测试文字\n(15s)";
+    
+    AlertBgView *alert =[[AlertBgView alloc]initWithFrame:CGRectMake(0, 0, WIDTH, HEIGHT)];
+    alert.clickRemove =NO;
+    alert.bgColor =[UIColor colorWithWhite:0 alpha:0.8];
+    [alert showView];
+    alert.centerView_height.constant =400;
+    
+    PlayerInfoView *playerView =[[[NSBundle mainBundle]loadNibNamed:NSStringFromClass([PlayerInfoView class]) owner:nil options:nil] lastObject];
+    [alert.centerView addSubview:playerView];
+    [playerView makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(alert.centerView.top);
+        make.left.equalTo(alert.centerView.left).offset(10);
+        make.right.equalTo(alert.centerView.right).offset(-10);
+        make.bottom.equalTo(alert.centerView.bottom);
+    }];
 }
 
 - (void)keywordsButtonClick:(UIButton*)button {

@@ -3,9 +3,7 @@ target 'WolfKill' do
 
 pod "Masonry"
 pod "MJExtension"
-<<<<<<< HEAD
+pod "NIMSDK"
 
-=======
->>>>>>> 1419373d4172bcffa5f89056010c0b517a3b4ca9
 end
 

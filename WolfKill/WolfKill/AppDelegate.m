@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "MSUMainController.h"
+#import <NIMSDK/NIMSDK.h>
 
 @interface AppDelegate ()
 
