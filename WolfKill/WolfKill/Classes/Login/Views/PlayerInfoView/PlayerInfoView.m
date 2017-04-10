@@ -12,7 +12,30 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    
+    _playerBtn.imageView.contentMode =UIViewContentModeScaleAspectFit;
+    _playerBtn.imageEdgeInsets =UIEdgeInsetsMake(0, 5, 0, 0);
+}
+
+- (IBAction)addFriendClick:(UIButton *)sender {
+    if (_buttonClick) {
+        _buttonClick(sender);
+    }
+}
+
+- (IBAction)forwardButtonClick:(UIButton *)sender {
+    if (_buttonClick) {
+        _buttonClick(sender);
+    }
+}
+
+- (IBAction)closeButtonClick:(UIButton *)sender {
+    if (_buttonClick) {
+        _buttonClick(sender);
+    }
+}
+
+- (void)clickButtonCallbackFunction:(ClickBlock)newBlock {
+    _buttonClick =newBlock;
 }
 /*
 // Only override drawRect: if you perform custom drawing.

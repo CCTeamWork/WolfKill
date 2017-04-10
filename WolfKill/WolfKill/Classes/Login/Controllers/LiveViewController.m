@@ -37,7 +37,7 @@
 /*
  **预约会议
  */
-- (void)reserveMeetingWithRoomId:(NSString *)roomId{
+- (void)reserveMeetingWithRoomId:(NSString *)roomId {
     NIMNetCallMeeting *meeting = [[NIMNetCallMeeting alloc] init];
     meeting.name = roomId;
     meeting.type = NIMNetCallMediaTypeVideo;
@@ -62,34 +62,20 @@
  */
 - (void)joinNetCallWithRMeeting:(NIMNetCallMeeting *)rMeeting {
     NIMNetCallOption *callOption =[[NIMNetCallOption alloc]init];
-    // 发送视频质量(SDK会处理 有可能无效)
-    callOption.preferredVideoQuality =NIMNetCallVideoQualityDefault;
     // 自动旋转远端画面
     callOption.autoRotateRemoteVideo =YES;
     // 是否使用后置摄像头
     callOption.startWithBackCamera =NO;
-    // 启用互动直播
-    callOption.enableBypassStreaming =YES;
-    // 互动直播推流地址
-    callOption.bypassStreamingUrl =nil;
-//    // 是否在服务器录制音频
-//    callOption.serverRecordAudio =YES;
-//    callOption.autoDeactivateAudioSession = NO;
-//    // 是否在服务器录制视频
-//    callOption.serverRecordVideo =YES;
     // 加入会议的类型->音频/视频
-    rMeeting.type =NIMNetCallMediaTypeAudio;
+    rMeeting.type =NIMNetCallMediaTypeVideo;
     // 是否发送音视频数据
-    rMeeting.actor = YES;
+    rMeeting.actor = NO;
     // 网路电话配置
     rMeeting.option = callOption;
     //进入房间聊天
     [[NIMAVChatSDK sharedSDK].netCallManager joinMeeting:rMeeting completion:^(NIMNetCallMeeting * _Nonnull meeting, NSError * _Nonnull error) {
         if (!error) {
             NSLog(@"进入成功");
-            //默认关闭所有人视频
-//            [[NIMAVChatSDK sharedSDK].netCallManager setCameraDisable:YES];
-            [[NIMAVChatSDK sharedSDK].netCallManager setMute:YES];
         } else {
             NSLog(@"进入失败");
             [self reserveMeetingWithRoomId:_number];
@@ -110,7 +96,7 @@
  **开启音视频
  */
 - (void)MSUOpenVideoAndAudio {
-    [[NIMAVChatSDK sharedSDK].netCallManager s
+    [[NIMAVChatSDK sharedSDK].netCallManager setMeetingRole:YES];
     [[NIMAVChatSDK sharedSDK].netCallManager setCameraDisable:NO];
     [[NIMAVChatSDK sharedSDK].netCallManager setMute:NO];
 }
@@ -119,6 +105,7 @@
  *关闭音视频
  */
 - (void)MSUCloseVideoAndAudio {
+    [[NIMAVChatSDK sharedSDK].netCallManager setMeetingRole:NO];
     [[NIMAVChatSDK sharedSDK].netCallManager setCameraDisable:YES];
     [[NIMAVChatSDK sharedSDK].netCallManager setMute:YES];
 }

@@ -61,8 +61,6 @@
 }
 - (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch {
     // 点击tableViewCell不执行Touch事件
-    UIView *view =touch.view;
-    NSLog(@"touch=%ld", view.tag);
     if ([NSStringFromClass([touch.view class]) isEqualToString:@"UITableViewCellContentView"] ||
         touch.view.tag ==2020) {
         return NO;

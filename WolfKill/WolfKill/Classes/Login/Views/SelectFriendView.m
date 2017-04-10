@@ -20,10 +20,10 @@
     [super awakeFromNib];
     
     self.backgroundColor =[UIColor clearColor];
-    
+    _dataArray =[NSMutableArray arrayWithObjects:@"", @"", @"", @"", nil];
     self.tableView.delegate =self;
     self.tableView.dataSource =self;
-    self.tableView.separatorColor =[UIColor colorWithWhite:0 alpha:0.3];
+    self.tableView.separatorStyle =UITableViewCellSeparatorStyleNone;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {

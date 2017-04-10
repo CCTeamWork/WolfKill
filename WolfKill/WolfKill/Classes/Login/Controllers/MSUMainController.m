@@ -62,9 +62,9 @@
     }];
     _centerView.centerText =@"";
     
-    LiveViewController *liveVC =[[LiveViewController alloc]init];
-    [self addChildViewController:liveVC];
-    [self.view insertSubview:liveVC.view aboveSubview:self.centerView];
+//    LiveViewController *liveVC =[[LiveViewController alloc]init];
+//    [self addChildViewController:liveVC];
+//    [self.view insertSubview:liveVC.view aboveSubview:self.centerView];
     
     MSUPoliceOrWitchView *chooseView = [[MSUPoliceOrWitchView alloc] initWithFrame:CGRectMake(40, HEIGHT*0.5 - 120, WIDTH-80, 150) isPolice:NO];
     chooseView.backgroundColor = [UIColor clearColor];
@@ -135,10 +135,15 @@
         make.right.equalTo(alert.centerView.right).offset(-10);
         make.bottom.equalTo(alert.centerView.bottom);
     }];
+    [playerView clickButtonCallbackFunction:^(UIButton *button) {
+        if (button ==playerView.closeButton) {
+            [alert removeView];
+        }
+    }];
 }
 
 - (void)keywordsButtonClick:(UIButton*)button {
-    [self gameResultView:@[@""] werewolf:@[@"", @"", @""] civilian:@[@"",@"",@""]];
+    [self gameResultView:@[@""].mutableCopy werewolf:@[@"", @"", @""].mutableCopy civilian:@[@"",@"",@""].mutableCopy];
 }
 
 /// 布局阵营视图

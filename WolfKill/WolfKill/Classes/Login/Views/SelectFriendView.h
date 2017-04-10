@@ -14,7 +14,6 @@ typedef void(^ViodBlock)(void);
 
 @property (weak, nonatomic) IBOutlet UIButton *removeButton;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
-@property (weak, nonatomic) IBOutlet UIButton *inviteButton;
 
 @property (strong, nonatomic) NSMutableArray *dataArray;
 
