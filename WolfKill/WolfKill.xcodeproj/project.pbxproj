@@ -27,6 +27,9 @@
 		D74D7F7C1E8A6F1B00533A99 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D74D7F7A1E8A6F1B00533A99 /* MessageCell.xib */; };
 		D74D7F7F1E8A892500533A99 /* CampView.m in Sources */ = {isa = PBXBuildFile; fileRef = D74D7F7E1E8A892500533A99 /* CampView.m */; };
 		D74D7F811E8A893500533A99 /* CampView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D74D7F801E8A893500533A99 /* CampView.xib */; };
+		D7584E8B1E9B3203009ABD08 /* LiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7584E8A1E9B3203009ABD08 /* LiveViewController.m */; };
+		D7584E8E1E9B39F3009ABD08 /* LoginOrRegist.m in Sources */ = {isa = PBXBuildFile; fileRef = D7584E8D1E9B39F3009ABD08 /* LoginOrRegist.m */; };
+		D7584E911E9B3A0D009ABD08 /* NIMServerAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = D7584E901E9B3A0D009ABD08 /* NIMServerAPI.m */; };
 		F01B332E1E8D25AC008642E6 /* MSUBottomCharactorView.m in Sources */ = {isa = PBXBuildFile; fileRef = F01B33271E8D25AC008642E6 /* MSUBottomCharactorView.m */; };
 		F01B332F1E8D25AC008642E6 /* MSUCharactorView.m in Sources */ = {isa = PBXBuildFile; fileRef = F01B33291E8D25AC008642E6 /* MSUCharactorView.m */; };
 		F01B33301E8D25AC008642E6 /* MSULeftCharactorView.m in Sources */ = {isa = PBXBuildFile; fileRef = F01B332B1E8D25AC008642E6 /* MSULeftCharactorView.m */; };
@@ -91,6 +94,12 @@
 		D74D7F7D1E8A892500533A99 /* CampView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CampView.h; sourceTree = "<group>"; };
 		D74D7F7E1E8A892500533A99 /* CampView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CampView.m; sourceTree = "<group>"; };
 		D74D7F801E8A893500533A99 /* CampView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CampView.xib; sourceTree = "<group>"; };
+		D7584E891E9B3203009ABD08 /* LiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiveViewController.h; sourceTree = "<group>"; };
+		D7584E8A1E9B3203009ABD08 /* LiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiveViewController.m; sourceTree = "<group>"; };
+		D7584E8C1E9B39F3009ABD08 /* LoginOrRegist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginOrRegist.h; sourceTree = "<group>"; };
+		D7584E8D1E9B39F3009ABD08 /* LoginOrRegist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginOrRegist.m; sourceTree = "<group>"; };
+		D7584E8F1E9B3A0D009ABD08 /* NIMServerAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMServerAPI.h; sourceTree = "<group>"; };
+		D7584E901E9B3A0D009ABD08 /* NIMServerAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMServerAPI.m; sourceTree = "<group>"; };
 		ED9105A806159BA55BD1BA1A /* Pods-WolfKill.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WolfKill.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WolfKill/Pods-WolfKill.debug.xcconfig"; sourceTree = "<group>"; };
 		F01B33261E8D25AC008642E6 /* MSUBottomCharactorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSUBottomCharactorView.h; sourceTree = "<group>"; };
 		F01B33271E8D25AC008642E6 /* MSUBottomCharactorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSUBottomCharactorView.m; sourceTree = "<group>"; };
@@ -317,6 +326,12 @@
 			children = (
 				F02729A21E8A3B5800823F53 /* MSUMainController.h */,
 				F02729A31E8A3B5800823F53 /* MSUMainController.m */,
+				D7584E891E9B3203009ABD08 /* LiveViewController.h */,
+				D7584E8A1E9B3203009ABD08 /* LiveViewController.m */,
+				D7584E8C1E9B39F3009ABD08 /* LoginOrRegist.h */,
+				D7584E8D1E9B39F3009ABD08 /* LoginOrRegist.m */,
+				D7584E8F1E9B3A0D009ABD08 /* NIMServerAPI.h */,
+				D7584E901E9B3A0D009ABD08 /* NIMServerAPI.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -569,8 +584,11 @@
 				F01B333B1E8D25B8008642E6 /* MSUWitchView.m in Sources */,
 				F01B332E1E8D25AC008642E6 /* MSUBottomCharactorView.m in Sources */,
 				D72D56B61E8B8FB200B38425 /* FriendsCell.m in Sources */,
+				D7584E911E9B3A0D009ABD08 /* NIMServerAPI.m in Sources */,
 				F02729B01E8A68BA00823F53 /* MSUAlertDetailView.m in Sources */,
+				D7584E8E1E9B39F3009ABD08 /* LoginOrRegist.m in Sources */,
 				D74D7F6C1E8A509900533A99 /* MainCenterView.m in Sources */,
+				D7584E8B1E9B3203009ABD08 /* LiveViewController.m in Sources */,
 				F01B33311E8D25AC008642E6 /* MSURightCharactorView.m in Sources */,
 				F01B333A1E8D25B8008642E6 /* MSUPoliceView.m in Sources */,
 				F01B332F1E8D25AC008642E6 /* MSUCharactorView.m in Sources */,

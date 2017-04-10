@@ -7,6 +7,7 @@
 //
 
 #import "MSUMainController.h"
+#import "LiveViewController.h"
 #import "MSUHeader.h"
 #import "MSUNavgitionView.h"
 #import "MSUCharactorView.h"
@@ -59,8 +60,11 @@
         make.right.equalTo(self.view.right).offset(-100);
         make.bottom.equalTo(self.view.bottom).offset(100);
     }];
-
     _centerView.centerText =@"";
+    
+    LiveViewController *liveVC =[[LiveViewController alloc]init];
+    [self addChildViewController:liveVC];
+    [self.view insertSubview:liveVC.view aboveSubview:self.centerView];
     
     MSUPoliceOrWitchView *chooseView = [[MSUPoliceOrWitchView alloc] initWithFrame:CGRectMake(40, HEIGHT*0.5 - 120, WIDTH-80, 150) isPolice:NO];
     chooseView.backgroundColor = [UIColor clearColor];
