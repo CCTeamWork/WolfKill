@@ -38,6 +38,8 @@
 //设置密码视图
 @property (nonatomic , strong) MSUAlertDetailView *msuAlertView;
 
+@property (nonatomic , strong) UIImageView *labaView;
+
 @end
 
 @implementation MSUMainController
@@ -69,6 +71,7 @@
     MSUPoliceOrWitchView *chooseView = [[MSUPoliceOrWitchView alloc] initWithFrame:CGRectMake(40, HEIGHT*0.5 - 120, WIDTH-80, 150) isPolice:NO];
     chooseView.backgroundColor = [UIColor clearColor];
     [self.view addSubview:chooseView];
+    
 }
 
 //导航栏
