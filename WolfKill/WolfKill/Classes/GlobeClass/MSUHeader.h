@@ -16,6 +16,7 @@
 
 //字体
 #define GAMEFONT @"FashionFont052,by-www.6763.net"
+#define GAMEFONT1 @"迷你简魏碑"
 
 //自定义屏幕宽高
 #define WIDTH [UIScreen mainScreen].bounds.size.width

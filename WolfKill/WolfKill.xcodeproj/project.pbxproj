@@ -41,6 +41,7 @@
 		F02729A71E8A3B5800823F53 /* MSUMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = F02729A31E8A3B5800823F53 /* MSUMainController.m */; };
 		F02729AA1E8A3B8A00823F53 /* MSUNavgitionView.m in Sources */ = {isa = PBXBuildFile; fileRef = F02729A91E8A3B8A00823F53 /* MSUNavgitionView.m */; };
 		F02729B01E8A68BA00823F53 /* MSUAlertDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = F02729AF1E8A68BA00823F53 /* MSUAlertDetailView.m */; };
+		F05ABBCF1E9901CB0065F23C /* 迷你简魏碑.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F05ABBCE1E9901CB0065F23C /* 迷你简魏碑.ttf */; };
 		F066C3721E8BE8CC00151CB0 /* NSString+ChangeString.m in Sources */ = {isa = PBXBuildFile; fileRef = F066C3711E8BE8CC00151CB0 /* NSString+ChangeString.m */; };
 /* End PBXBuildFile section */
 
@@ -124,6 +125,7 @@
 		F02729A91E8A3B8A00823F53 /* MSUNavgitionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSUNavgitionView.m; sourceTree = "<group>"; };
 		F02729AE1E8A68BA00823F53 /* MSUAlertDetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSUAlertDetailView.h; sourceTree = "<group>"; };
 		F02729AF1E8A68BA00823F53 /* MSUAlertDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSUAlertDetailView.m; sourceTree = "<group>"; };
+		F05ABBCE1E9901CB0065F23C /* 迷你简魏碑.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "迷你简魏碑.ttf"; sourceTree = "<group>"; };
 		F066C3701E8BE8CC00151CB0 /* NSString+ChangeString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ChangeString.h"; sourceTree = "<group>"; };
 		F066C3711E8BE8CC00151CB0 /* NSString+ChangeString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ChangeString.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -174,6 +176,7 @@
 		D74D7F711E8A532400533A99 /* Resurces */ = {
 			isa = PBXGroup;
 			children = (
+				F05ABBCE1E9901CB0065F23C /* 迷你简魏碑.ttf */,
 				D74D7F721E8A532400533A99 /* yan.ttf */,
 			);
 			path = Resurces;
@@ -482,6 +485,7 @@
 				D72D56B21E8B8C8C00B38425 /* SelectFriendView.xib in Resources */,
 				D74D7F731E8A532400533A99 /* yan.ttf in Resources */,
 				D72D56B81E8B978E00B38425 /* Assets.xcassets in Resources */,
+				F05ABBCF1E9901CB0065F23C /* 迷你简魏碑.ttf in Resources */,
 				D72D57291E8BE23600B38425 /* ButtonView.xib in Resources */,
 				D72D56B71E8B8FB200B38425 /* FriendsCell.xib in Resources */,
 				F027281C1E8A31E000823F53 /* Main.storyboard in Resources */,

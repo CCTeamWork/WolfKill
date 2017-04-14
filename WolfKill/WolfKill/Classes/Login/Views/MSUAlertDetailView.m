@@ -35,6 +35,17 @@
     nimaIma.image = [UIImage imageNamed:@"shifoushezhimima"];
     [navView addSubview:nimaIma];
     
+    //是否设置密码
+    UIImageView *shifouIma = [[UIImageView alloc] init];
+    shifouIma.image = [UIImage imageNamed:@"shifou"];
+    [nimaIma addSubview:shifouIma];
+    [shifouIma makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(nimaIma.top).offset(10);
+        make.left.equalTo(nimaIma.left).offset(20);
+        make.width.equalTo(80);
+        make.height.equalTo(30);
+    }];
+    
     //勾选按钮
     self.gouBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [_gouBtn setImage:[UIImage imageNamed:@"mima_bor"] forState:UIControlStateNormal];
@@ -49,7 +60,7 @@
     
     
     //取消和确定按钮
-    NSArray *btnArr = @[@"quexiao_yellow",@"queding_yellow"];
+    NSArray *btnArr = @[@"cancel",@"sure"];
     for (int i = 0; i < 2; i++) {
         self.sureOrCancelBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         [_sureOrCancelBtn setImage:[UIImage imageNamed:btnArr[i]] forState:UIControlStateNormal];

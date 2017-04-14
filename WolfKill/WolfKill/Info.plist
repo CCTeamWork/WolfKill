@@ -22,10 +22,11 @@
 	<true/>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
-    <key>UIAppFonts</key>
-    <array>
-        <string>yan.ttf</string>
-    </array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>迷你简魏碑.ttf</string>
+		<string>yan.ttf</string>
+	</array>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
 	<key>UIRequiredDeviceCapabilities</key>

@@ -27,7 +27,7 @@
     self.charactBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [_charactBtn setImage:[UIImage imageNamed:@"moxing_1"] forState:UIControlStateNormal];
     _charactBtn.adjustsImageWhenHighlighted = NO;
-    _charactBtn.contentMode =UIViewContentModeScaleAspectFit;
+//    _charactBtn.contentMode =UIViewContentModeScaleAspectFit;
     [self addSubview:_charactBtn];
     [_charactBtn makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.top).offset(0);
@@ -86,17 +86,7 @@
         make.height.equalTo(identiWidth);
     }];
     
-    //警察身份图标
-    self.policeIma = [[UIImageView alloc] init];
-    self.policeIma.contentMode =UIViewContentModeScaleAspectFit;
-    [self addSubview:_policeIma];
-    _policeIma.image = [UIImage imageNamed:@"tubiao"];
-    [_policeIma makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(_charactBtn.top).offset(0);
-        make.right.equalTo(_charactBtn.right).offset(0);
-        make.width.equalTo(characWidth);
-        make.height.equalTo(identiWidth);
-    }];
+
     
     //狼人身份标识
     self.wolfIma = [[UIImageView alloc] init];
@@ -110,16 +100,16 @@
         make.height.equalTo(leftSpace);
     }];
     
-    //丘比特身份标识
+    //情侣身份标识
     self.cupidIma = [[UIImageView alloc] init];
     self.cupidIma.contentMode =UIViewContentModeScaleAspectFit;
     [self insertSubview:_cupidIma belowSubview:_charactBtn];
-    _cupidIma.image = [UIImage imageNamed:@"jian"];
+    _cupidIma.image = [UIImage imageNamed:@"aixin"];
     [_cupidIma makeConstraints:^(MASConstraintMaker *make) {
-        make.bottom.equalTo(_charactBtn.bottom).offset(0);
-        make.right.equalTo(_charactBtn.right).offset(15);
-        make.width.equalTo(characWidth + 25);
-        make.height.equalTo(characHeight - 25);
+        make.bottom.equalTo(_roomOwnerIma.top).offset(0);
+        make.left.equalTo(_charactBtn.right).offset(0);
+        make.width.equalTo(15);
+        make.height.equalTo(15);
     }];
     
     //手掌标识
@@ -145,10 +135,10 @@
     [self addSubview:_audioIma];
     _audioIma.image = [UIImage imageNamed:@"yuyin"];
     [_audioIma makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(_charactBtn.top).offset(10);
+        make.bottom.equalTo(_identiIma.top).offset(0);
         make.right.equalTo(_charactBtn.left).offset(0);
-        make.width.equalTo(20);
-        make.height.equalTo(30);
+        make.width.equalTo(15);
+        make.height.equalTo(25);
     }];
     
     //倒计时标识
@@ -167,6 +157,18 @@
         make.right.equalTo(_audioIma.left).offset(0);
         make.width.equalTo(30);
         make.height.equalTo(20);
+    }];
+    
+    //警察身份图标
+    self.policeIma = [[UIImageView alloc] init];
+    self.policeIma.contentMode =UIViewContentModeScaleAspectFit;
+    [self addSubview:_policeIma];
+    _policeIma.image = [UIImage imageNamed:@"jinghui"];
+    [_policeIma makeConstraints:^(MASConstraintMaker *make) {
+        make.bottom.equalTo(_audioIma.top).offset(0);
+        make.right.equalTo(_charactBtn.left).offset(0);
+        make.width.equalTo(identiWidth);
+        make.height.equalTo(characWidth);
     }];
 
 }

@@ -208,13 +208,15 @@
         ima.hidden = YES;
     }
 
+    
+     */
+    
     for (NSInteger index = 0; index < _handsArr.count; index++) {
         UIImageView *ima = _handsArr[index];
         ima.hidden = YES;
     }
+
     
-     */
-     
 //    for (NSInteger index = 0; index < _audioArr.count; index++) {
 //        UIImageView *ima = _audioArr[index];
 //        ima.hidden = YES;

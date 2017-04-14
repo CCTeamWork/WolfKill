@@ -41,7 +41,7 @@
     roomlab.text = @"简单21122房";
     roomlab.textColor = WHITECOLOR;
     roomlab.textAlignment = NSTextAlignmentCenter;
-    [roomlab setFont:[UIFont fontWithName:GAMEFONT size:16]];
+    [roomlab setFont:[UIFont fontWithName:GAMEFONT1 size:16]];
     [navView addSubview:roomlab];
     [roomlab makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(navView.top).offset(statusHeight + 5);
