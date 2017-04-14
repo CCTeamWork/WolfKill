@@ -11,7 +11,8 @@
 /// 狼人(最多5人)或好人(最多10人)阵营
 typedef NS_ENUM(NSInteger, CampViewType) {
     CampViewTypeWerewolf,
-    CampViewTypeGoodPerson
+    CampViewTypeGoodPerson,
+    CampViewTypeLover,
 };
 
 @interface CampView : UIView

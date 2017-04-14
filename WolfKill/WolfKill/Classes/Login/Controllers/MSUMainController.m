@@ -7,6 +7,7 @@
 //
 
 #import "MSUMainController.h"
+#import "LiveViewController.h"
 #import "MSUHeader.h"
 #import "MSUNavgitionView.h"
 #import "MSUCharactorView.h"
@@ -23,6 +24,8 @@
 // 查看玩家资料
 #import "ButtonView.h"
 
+#import "PlayerInfoView.h"
+
 #import "MSUPoliceOrWitchView.h"
 
 
@@ -34,6 +37,8 @@
 @property (nonatomic, strong) MainCenterView *centerView;
 //设置密码视图
 @property (nonatomic , strong) MSUAlertDetailView *msuAlertView;
+
+@property (nonatomic , strong) UIImageView *labaView;
 
 @end
 
@@ -67,12 +72,16 @@
         make.right.equalTo(self.view.right).offset(-100);
         make.bottom.equalTo(self.view.bottom).offset(100);
     }];
-
     _centerView.centerText =@"";
+    
+//    LiveViewController *liveVC =[[LiveViewController alloc]init];
+//    [self addChildViewController:liveVC];
+//    [self.view insertSubview:liveVC.view aboveSubview:self.centerView];
     
     MSUPoliceOrWitchView *chooseView = [[MSUPoliceOrWitchView alloc] initWithFrame:CGRectMake(40, HEIGHT*0.5 - 120, WIDTH-80, 150) isPolice:NO];
     chooseView.backgroundColor = [UIColor clearColor];
     [self.view addSubview:chooseView];
+    
 }
 
 //导航栏
@@ -124,15 +133,39 @@
 
 - (void)renBtnClick:(UIButton *)sender{
     _centerView.topText =@"sqz宋清正sqz\n测试文字\n(15s)";
+    
+    AlertBgView *alert =[[AlertBgView alloc]initWithFrame:CGRectMake(0, 0, WIDTH, HEIGHT)];
+    alert.clickRemove =NO;
+    alert.bgColor =[UIColor colorWithWhite:0 alpha:0.8];
+    [alert showView];
+    alert.centerView_height.constant =400;
+    
+    PlayerInfoView *playerView =[[[NSBundle mainBundle]loadNibNamed:NSStringFromClass([PlayerInfoView class]) owner:nil options:nil] lastObject];
+    [alert.centerView addSubview:playerView];
+    [playerView makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(alert.centerView.top);
+        make.left.equalTo(alert.centerView.left).offset(10);
+        make.right.equalTo(alert.centerView.right).offset(-10);
+        make.bottom.equalTo(alert.centerView.bottom);
+    }];
+    [playerView clickButtonCallbackFunction:^(UIButton *button) {
+        if (button ==playerView.closeButton) {
+            [alert removeView];
+        }
+    }];
 }
 
 - (void)keywordsButtonClick:(UIButton*)button {
+    [self gameResultView:@[@""].mutableCopy werewolf:@[@"", @"", @""].mutableCopy civilian:@[@"",@"",@""].mutableCopy];
+}
+
+/// 布局阵营视图
+- (void)gameResultView:(NSMutableArray*)lovers werewolf:(NSMutableArray*)werewolfs civilian:(NSMutableArray*)civilians {
+    
     AlertBgView *alert =[[AlertBgView alloc]initWithFrame:CGRectMake(0, 0, WIDTH, HEIGHT)];
     alert.clickRemove =YES;
     alert.bgColor =[UIColor colorWithWhite:0 alpha:0.8];
     [alert showView];
-    
-    alert.centerView_height.constant =0;
     
     //对阵信息上一部分
     CampView *oneView =[[CampView alloc]initWithFrame:CGRectZero type:CampViewTypeWerewolf];
@@ -155,17 +188,46 @@
         make.right.equalTo(oneView.right).offset(-10);
         make.height.equalTo(35);
     }];
-    //对阵信息上一部分
-    CampView *twoView =[[CampView alloc]initWithFrame:CGRectZero type:CampViewTypeGoodPerson];
-    twoView.typeImageView.image =[UIImage imageNamed:@"win"];
-    [alert.btmView addSubview:twoView];
-
-    [twoView makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(alert.btmView.top);
-        make.left.equalTo(alert.btmView.left).offset(10);
-        make.right.equalTo(alert.btmView.right).offset(-10);
-        make.height.equalTo(150);
-    }];
+    if (lovers.count>0) {
+        alert.centerView_height.constant =170;
+        
+        //对阵信息中间部分
+        CampView *twoView =[[CampView alloc]initWithFrame:CGRectZero type:CampViewTypeGoodPerson];
+        twoView.typeImageView.image =[UIImage imageNamed:@"win"];
+        [alert.centerView addSubview:twoView];
+        
+        [twoView makeConstraints:^(MASConstraintMaker *make) {
+            make.top.equalTo(alert.centerView.top).offset(10);
+            make.left.equalTo(alert.centerView.left).offset(10);
+            make.right.equalTo(alert.centerView.right).offset(-10);
+            make.height.equalTo(150);
+        }];
+        
+        //对阵信息下方部分
+        CampView *threeView =[[CampView alloc]initWithFrame:CGRectZero type:CampViewTypeLover];
+        threeView.typeImageView.image =[UIImage imageNamed:@"lose"];
+        [alert.btmView addSubview:threeView];
+        
+        [threeView makeConstraints:^(MASConstraintMaker *make) {
+            make.top.equalTo(alert.btmView.top).offset(0);
+            make.left.equalTo(alert.btmView.left).offset(10);
+            make.right.equalTo(alert.btmView.right).offset(-10);
+            make.height.equalTo(150);
+        }];
+    } else {
+        alert.centerView_height.constant =0;
+        //对阵信息下方部分
+        CampView *threeView =[[CampView alloc]initWithFrame:CGRectZero type:CampViewTypeGoodPerson];
+        threeView.typeImageView.image =[UIImage imageNamed:@"win"];
+        [alert.btmView addSubview:threeView];
+        
+        [threeView makeConstraints:^(MASConstraintMaker *make) {
+            make.top.equalTo(alert.btmView.top).offset(0);
+            make.left.equalTo(alert.btmView.left).offset(10);
+            make.right.equalTo(alert.btmView.right).offset(-10);
+            make.height.equalTo(150);
+        }];
+    }
 }
 
 //人物形象

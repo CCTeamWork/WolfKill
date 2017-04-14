@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -13,49 +13,57 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="67" id="KGk-i7-Jjw" customClass="FriendsCell">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="97" id="KGk-i7-Jjw" customClass="FriendsCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="79"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lJu-Dc-79q">
-                        <rect key="frame" x="8" y="8" width="33" height="33"/>
+                    <button contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lJu-Dc-79q">
+                        <rect key="frame" x="8" y="8" width="63" height="63"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="lJu-Dc-79q" secondAttribute="height" multiplier="1:1" id="ZGU-1R-JB5"/>
                         </constraints>
+                        <state key="normal" backgroundImage="huangjingkuang"/>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                <real key="value" value="17"/>
+                                <real key="value" value="4"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
-                    </imageView>
+                    </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CRg-af-4M5">
-                        <rect key="frame" x="51" y="16" width="210" height="18"/>
+                        <rect key="frame" x="81" y="31" width="165" height="18"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5xm-ta-iZb">
-                        <rect key="frame" x="271" y="11" width="35" height="29"/>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5xm-ta-iZb">
+                        <rect key="frame" x="256" y="25" width="50" height="29"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="35" id="Lg6-8I-Rg9"/>
+                            <constraint firstAttribute="width" constant="50" id="LX2-g6-Vcg"/>
                             <constraint firstAttribute="height" constant="29" id="PV8-jz-ohF"/>
                         </constraints>
-                        <state key="normal" image="mima_bor"/>
-                        <state key="selected" image="select_right"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal" image="yaoqing_friend"/>
+                        <state key="selected" image="yiyaoqing_friend"/>
                     </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cell_line" translatesAutoresizingMaskIntoConstraints="NO" id="DNP-Kv-rV0">
+                        <rect key="frame" x="-2" y="80" width="324" height="1"/>
+                    </imageView>
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="trailingMargin" secondItem="5xm-ta-iZb" secondAttribute="trailing" constant="6" id="1xe-fI-yQW"/>
                     <constraint firstItem="CRg-af-4M5" firstAttribute="centerY" secondItem="lJu-Dc-79q" secondAttribute="centerY" id="47p-96-Ey7"/>
                     <constraint firstItem="5xm-ta-iZb" firstAttribute="leading" secondItem="CRg-af-4M5" secondAttribute="trailing" constant="10" id="BqU-yd-qwF"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="DNP-Kv-rV0" secondAttribute="trailing" constant="-10" id="ELr-Lb-lqh"/>
                     <constraint firstItem="CRg-af-4M5" firstAttribute="leading" secondItem="lJu-Dc-79q" secondAttribute="trailing" constant="10" id="FlU-V8-qJQ"/>
                     <constraint firstAttribute="bottomMargin" secondItem="lJu-Dc-79q" secondAttribute="bottom" id="NsX-1h-U2Y"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="DNP-Kv-rV0" secondAttribute="bottom" constant="-10" id="cbR-He-Tem"/>
                     <constraint firstItem="5xm-ta-iZb" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ixu-FF-6FC"/>
                     <constraint firstItem="lJu-Dc-79q" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="jcZ-Dh-akw"/>
+                    <constraint firstItem="DNP-Kv-rV0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-10" id="mBS-Cz-7bQ"/>
                     <constraint firstAttribute="topMargin" secondItem="lJu-Dc-79q" secondAttribute="top" id="rRR-qO-E0a"/>
                 </constraints>
             </tableViewCellContentView>
@@ -64,11 +72,13 @@
                 <outlet property="nameLabel" destination="CRg-af-4M5" id="fdW-Zj-Zfv"/>
                 <outlet property="selectButton" destination="5xm-ta-iZb" id="p2u-qM-1YL"/>
             </connections>
-            <point key="canvasLocation" x="34" y="62.5"/>
+            <point key="canvasLocation" x="34" y="2"/>
         </tableViewCell>
     </objects>
     <resources>
-        <image name="mima_bor" width="27" height="22"/>
-        <image name="select_right" width="30" height="17"/>
+        <image name="cell_line" width="305" height="1"/>
+        <image name="huangjingkuang" width="71" height="71"/>
+        <image name="yaoqing_friend" width="62" height="36"/>
+        <image name="yiyaoqing_friend" width="51" height="26"/>
     </resources>
 </document>

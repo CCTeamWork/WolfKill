@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
-    <device id="retina3_5" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,63 +13,50 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SelectFriendView">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="546"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pqU-iJ-6pL">
-                    <rect key="frame" x="20" y="50" width="280" height="355"/>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dikuang" translatesAutoresizingMaskIntoConstraints="NO" id="Fj1-pm-pgQ">
+                    <rect key="frame" x="15" y="35" width="290" height="476"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="280" id="RsQ-dw-1J2"/>
+                        <constraint firstAttribute="width" secondItem="Fj1-pm-pgQ" secondAttribute="height" multiplier="65:107" id="ndI-1R-Gsn"/>
                     </constraints>
-                    <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="选择邀请好友" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qt3-JG-9rI">
-                        <rect key="frame" x="0.0" y="0.0" width="280" height="44"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
-                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <nil key="highlightedColor"/>
-                    </label>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="G1D-Qc-Cqx">
+                    <rect key="frame" x="15" y="95" width="290" height="386"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                 </tableView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lMv-Oy-Ezy">
-                    <rect key="frame" x="71" y="435" width="178" height="40"/>
-                    <state key="normal" image="yaoqinghaoyou"/>
+                    <rect key="frame" x="89" y="492" width="143" height="41"/>
+                    <state key="normal" image="close"/>
                     <connections>
-                        <action selector="inviteButtonClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="stB-Tr-2vp"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rR4-iH-dKV">
-                    <rect key="frame" x="280" y="0.0" width="40" height="40"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="40" id="nJr-ZJ-nLK"/>
-                        <constraint firstAttribute="width" secondItem="rR4-iH-dKV" secondAttribute="height" multiplier="1:1" id="xXi-et-DLE"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                    <state key="normal" backgroundImage="yaoqing_bottom"/>
-                    <connections>
-                        <action selector="didRemoveButtonClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="wWe-tr-lfq"/>
+                        <action selector="didRemoveButtonClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="6s1-EH-Oed"/>
                     </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" red="0.87049323320000005" green="0.87064296009999997" blue="0.8704838157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="lMv-Oy-Ezy" secondAttribute="bottom" constant="5" id="0bL-Hf-JMU"/>
-                <constraint firstItem="lMv-Oy-Ezy" firstAttribute="centerX" secondItem="pqU-iJ-6pL" secondAttribute="centerX" id="10R-a4-AJt"/>
-                <constraint firstItem="pqU-iJ-6pL" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="50" id="Jbz-7M-Ktl"/>
-                <constraint firstItem="rR4-iH-dKV" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="dde-9m-Hbv"/>
-                <constraint firstAttribute="trailing" secondItem="rR4-iH-dKV" secondAttribute="trailing" id="hjI-gc-aAi"/>
-                <constraint firstItem="lMv-Oy-Ezy" firstAttribute="top" secondItem="pqU-iJ-6pL" secondAttribute="bottom" constant="30" id="wUm-JB-gVr"/>
-                <constraint firstItem="pqU-iJ-6pL" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="xEt-eO-wtI"/>
+                <constraint firstAttribute="trailing" secondItem="Fj1-pm-pgQ" secondAttribute="trailing" constant="15" id="5g5-D5-MnA"/>
+                <constraint firstItem="G1D-Qc-Cqx" firstAttribute="bottom" secondItem="Fj1-pm-pgQ" secondAttribute="bottom" constant="-30" id="B7c-DE-sHW"/>
+                <constraint firstItem="G1D-Qc-Cqx" firstAttribute="leading" secondItem="Fj1-pm-pgQ" secondAttribute="leading" id="C3Z-On-Cfr"/>
+                <constraint firstItem="G1D-Qc-Cqx" firstAttribute="trailing" secondItem="Fj1-pm-pgQ" secondAttribute="trailing" id="XV8-6m-QPK"/>
+                <constraint firstItem="G1D-Qc-Cqx" firstAttribute="top" secondItem="Fj1-pm-pgQ" secondAttribute="top" constant="60" id="cWD-Ve-xje"/>
+                <constraint firstItem="Fj1-pm-pgQ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="hzz-f0-Qkk"/>
+                <constraint firstItem="lMv-Oy-Ezy" firstAttribute="centerX" secondItem="Fj1-pm-pgQ" secondAttribute="centerX" id="iyG-Yv-4Cq"/>
+                <constraint firstItem="lMv-Oy-Ezy" firstAttribute="top" secondItem="Fj1-pm-pgQ" secondAttribute="bottom" constant="-19" id="noa-s1-dgl"/>
+                <constraint firstItem="Fj1-pm-pgQ" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="ymf-oR-Cdb"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
-                <outlet property="inviteButton" destination="lMv-Oy-Ezy" id="MBY-zF-Gcw"/>
-                <outlet property="removeButton" destination="rR4-iH-dKV" id="ClP-Th-GoE"/>
-                <outlet property="tableView" destination="pqU-iJ-6pL" id="czV-uh-yPj"/>
+                <outlet property="removeButton" destination="lMv-Oy-Ezy" id="LbH-nj-wS6"/>
+                <outlet property="tableView" destination="G1D-Qc-Cqx" id="GAv-nZ-laQ"/>
             </connections>
+            <point key="canvasLocation" x="34" y="87"/>
         </view>
     </objects>
     <resources>
-        <image name="yaoqing_bottom" width="22" height="22"/>
-        <image name="yaoqinghaoyou" width="178" height="40"/>
+        <image name="close" width="143" height="41"/>
+        <image name="dikuang" width="313" height="511"/>
     </resources>
 </document>

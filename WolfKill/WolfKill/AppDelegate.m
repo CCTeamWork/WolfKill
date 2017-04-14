@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "MSUMainController.h"
+#import <NIMSDK/NIMSDK.h>
 
 @interface AppDelegate ()
 
@@ -18,6 +19,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    NSString *appKey = @"a543326452dbb285fd196b19524e0c55";
+    NSString *cerName = @"https://app.netease.im/api";
+    [[NIMSDK sharedSDK] registerWithAppID:appKey cerName:cerName];
+    
     
     MSUMainController *msu = [[MSUMainController alloc] init];
     
